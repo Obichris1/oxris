@@ -26,9 +26,9 @@ const Navbar = () => {
 
   const services = [
     { name: "Web Development", path: "/Services/web-development" },
-    { name: "App Development", path: "/Services/app-development" },
+    { name: "App Development", path: "/Services/software-solutions" },
     { name: "UI/UX Design", path: "/Services/ui-ux-design" },
-    { name: "Software Training", path: "/Services/software-training" },
+    { name: "Software Training", path: "/Services/it-consultation" },
   ];
 
   return (
