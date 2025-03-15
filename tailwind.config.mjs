@@ -8,10 +8,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+        primary: {
+          DEFAULT: "#800080", // Primary color
+          light: "#6366F1",
+          dark: "#4338CA",
+        },
+        secondary: {
+          DEFAULT: "#EC4899", // Secondary color
+          light: "#F472B6",
+          dark: "#BE185D",
+        },
+        text: {
+          primary: "#1E293B", // Dark Gray (Primary text color)
+          secondary: "#64748B", // Lighter Gray (Secondary text)
+        },
     },
   },
+},
   plugins: [],
 };
