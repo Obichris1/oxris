@@ -30,6 +30,7 @@ const Navbar = () => {
 
   const handleClose = () => {
     setAnchorEl(null);
+    showMenu()
   };
   
 
@@ -70,7 +71,7 @@ const Navbar = () => {
           : "header text-black bg-white "
       }
     >
-     
+      <div className="flex justify-between items-center w-[80%] m-auto">
         <Link href="/">
         {isMobile ? (
         <Image src="/logo-no-background.png" width={120} height={200} alt="Mobile Logo" />
@@ -127,6 +128,7 @@ const Navbar = () => {
           <MenuItem
             key={service.name}
             component={Link}
+            
             href={service.path}
             onClick={handleClose}
             sx={{
@@ -137,6 +139,7 @@ const Navbar = () => {
               color: "black",
               transition: "all 0.3s ease-in-out",
               "&:hover": {
+                background : "none",
                 color: "#4B0082",
               },
             }}
@@ -153,9 +156,9 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <Button variant="contained" className="hidden lg:flex btn bg-primary ">
-          Get a Quote
-        </Button>
+        <Button variant="contained" className="!hidden lg:!flex !bg-primary !text-white !py-2 !px-4 btn">
+  Get a Quote
+</Button>
 
         <div className="hamburger" onClick={showMenu}>
           {click ? (
@@ -165,7 +168,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
- 
+    </div>
   );
 };
 

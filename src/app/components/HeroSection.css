@@ -32,15 +32,15 @@ position: relative;
     height: 100%;
 }
 
-.content{
-   position: absolute;
-   transform: translate(-50%,-50%);
-   left: 50%;
+.content {
+    position: absolute;
     top: 50%;
-   text-align: center;
-   font-size: 2rem;
-
-   /* margin: auto; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2rem;
+    width: 80%;
+    margin: auto;
 }
 .content div{
     /* padding: 30px; */
@@ -48,21 +48,17 @@ position: relative;
 
 
 
-@media screen and (max-width : 1040px){
-    .content{
-        /* position: absolute;
-        transform: translate(-50%,-50%);
-        left: 50%;
-         top: 50%;
-        text-align: center; */
-        font-size: 1rem;
-     
-        /* margin: auto; */
-     }
+@media screen and (min-width: 1040px) {
+    .content {
+        left: 0;
+        transform: translate(0, -50%);
+        text-align: left;
+        padding-left: 9%; /* Add spacing from the left */
+    }
+}
 
      .content .buttons{
         display: flex;
     }
     
 
-}
