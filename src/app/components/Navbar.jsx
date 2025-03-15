@@ -70,7 +70,7 @@ const Navbar = () => {
           : "header text-black bg-white "
       }
     >
-      <div className="flex justify-between items-center w-[80%] m-auto">
+     
         <Link href="/">
         {isMobile ? (
         <Image src="/logo-no-background.png" width={120} height={200} alt="Mobile Logo" />
@@ -165,7 +165,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-    </div>
+ 
   );
 };
 
