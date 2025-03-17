@@ -13,9 +13,9 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className=" bg-white mt-10 text-black">
+    <div className=" bg-white mt-10  text-black">
       {/* Footer Container */}
-      <div className="flex flex-wrap md:flex-nowrap justify-between gap-10 w-[90%] md:w-[80%] mx-auto py-10 md:py-28">
+      <div className="flex flex-wrap md:flex-nowrap justify-between gap-10 w-[80%] md:w-[80%] mx-auto py-10 md:py-28">
         
         {/* SOCIAL MEDIA  */}
         <div className="flex flex-col gap-4 w-full md:w-[30%]">

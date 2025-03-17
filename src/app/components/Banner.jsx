@@ -112,20 +112,20 @@ const Banner = () => {
     >
       <div className="absolute inset-0 bg-black/80"></div>
 
-      <div className="w-[80%] m-auto flex flex-col gap-10 relative z-1 text-gray-200">
+      <div className="w-[80%] m-auto flex flex-col gap-10 relative z-1 text-gray-500">
         {/* Text section */}
         <div className="flex flex-col md:flex-row gap-10">
           {/* Left Text */}
           <div
             ref={leftTextRef}
-            className="flex flex-col gap-10 w-full md:w-1/2  opacity-0"
+            className="flex flex-col gap-10 w-full md:w-1/2  opacity-0 "
           >
-            <Typography>
+            <Typography className="!text-gray-200">
               Oxris solutions, is a Nigerian based IT solutions Company with free website
               consulting in Lagos.
             </Typography>
 
-            <Typography>
+            <Typography className="text-gray-200">
             At Tagdev, we understand that no one knows your business better than you. That’s why our team of experts takes the time to understand your unique needs and goals, 
             working closely with you to develop a professionally written and beautifully designed website or app.
              Beyond just development, we offer a range of services tailored to enhance your digital presence, 
@@ -134,7 +134,7 @@ const Banner = () => {
           </div>
 
           {/* Right Text */}
-          <Typography ref={rightTextRef} className="md:w-1/2 w-full opacity-0">
+          <Typography ref={rightTextRef} className="md:w-1/2 w-full opacity-0 !text-gray-200">
           Whether you're a startup, a growing company, or an established brand, we offer tailored services that ensure you are easily found, known, and trusted by your target audience.
           </Typography>
         </div>
@@ -148,7 +148,7 @@ const Banner = () => {
             variant="contained"
             color="primary"
             endIcon={<FaArrowRight />}
-            className="bg-primary !px-6 md:px-8 !py-3 rounded-lg btn"
+            className="!bg-primary !px-6 md:px-8 !py-3 rounded-lg btn text-gray-200"
           >
             Learn More
           </Button>
@@ -171,7 +171,7 @@ const Banner = () => {
               //     color: "#007bff",
               //   },
               // }}
-              className="rounded-full py-3 px-2 md:px-4 bg-primary items-center justify-center"
+              className="rounded-full !py-3 !px-2 md:px-4 md:py-4 !bg-primary items-center justify-center"
               component="a"
               href={`tel:08129614462`}
             >
@@ -179,21 +179,21 @@ const Banner = () => {
             </Button>
 
             {/* Text outside the button */}
-            <Typography variant="h6" className="font-semibold text-lg">
+            <Typography variant="h6" className="font-semibold text-lg text-gray-200">
               Call now
             </Typography>
           </div>
 
           {/* Years */}
           <div className="text-center">
-            <h2 className="text-xl font-bold">Years</h2>
-            <p className="text-3xl md:text-4xl font-extrabold mt-2">{years}+</p>
+            <h2 className="text-xl font-bold text-gray-200">Years</h2>
+            <p className="text-3xl md:text-4xl font-extrabold mt-2 text-gray-300">{years}+</p>
           </div>
 
           {/* ✅ Success Rate (Now Working!) */}
           <div className="text-center" ref={successRef}>
-            <h2 className="text-xl font-bold">Project Success Rate</h2>
-            <p className="text-3xl md:text-4xl font-extrabold mt-2">
+            <h2 className="text-xl font-bold text-gray-200">Project Success Rate</h2>
+            <p className="text-3xl md:text-4xl font-extrabold mt-2 text-gray-200">
               {successRate}%
             </p>
           </div>

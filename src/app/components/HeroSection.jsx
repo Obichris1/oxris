@@ -52,7 +52,7 @@ const HeroSection = () => {
   >
     <Button
       variant="contained"
-      className="btn !bg-primary"
+      className="btn !bg-primary px-12"
     >
       Get a Quote
     </Button>

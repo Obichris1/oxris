@@ -8,14 +8,14 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     name: "John Doe",
-    title: "CEO, TechCorp",
+    title: "CEO, Dsquare Event Centers",
     feedback:
       "D’Xris Tech transformed our business with a stunning website. Highly recommended! Their expertise in app development is top-notch. Delivered on time with great qualityTheir expertise in app development is top-notch. Delivered on time with great qualityTheir expertise in app development is top-notch. Delivered on time with great qualityTheir expertise in app development is top-notch. Delivered on time with great qualityTheir expertise in app development is top-notch. Delivered on time with great qualityTheir expertise in app development is top-notch. Delivered on time with great quality",
     rating: 5,
   },
   {
-    name: "John Doe",
-    title: "CEO, TechCorp",
+    name: "Mr Bola",
+    title: "Principal, Baptist Model High Schools",
     feedback:
       "D’Xris Tech transformed our business with a stunning website. Highly recommended! Their expertise in app development is top-notch. Delivered on time with great qualityTheir expertise in app development is top-notch. Delivered on time with great qualityTheir expertise in app development is top-notch. Delivered on time with great qualityTheir expertise in app development is top-notch. Delivered on time with great qualityTheir expertise in app development is top-notch. Delivered on time with great qualityTheir expertise in app development is top-notch. Delivered on time with great quality",
     rating: 5,
@@ -31,10 +31,10 @@ const testimonials = [
 
 const TestimonialSection = () => {
   return (
-    <section className=" py-16 px-6">
+    <section className=" w-[80%] m-auto ">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold ">What Our Clients Say</h2>
-        <p className="text-gray-400 mt-2">
+        <h2 className="text-3xl md:text-4xl font-bold text-black ">What Our Clients Say</h2>
+        <p className="text-gray-500 mt-2">
           Trusted by businesses and individuals worldwide
         </p>
       </div>
@@ -54,10 +54,10 @@ const TestimonialSection = () => {
             >
               <CardContent className="flex flex-col items-center text-center p-8">
                 <FaQuoteLeft size={60} className="text-primary" />
-                <h3 className="font-semibold text-lg mt-4">
+                <h3 className=" text-lg text-black mt-4">
                   {testimonial.name}
                 </h3>
-                <p className="text-sm text-gray-500">{testimonial.title}</p>
+                <p className="text-sm text-gray-500 font-semibold">{testimonial.title}</p>
                 <div className="flex mt-2">
                   {Array.from({ length: testimonial.rating }, (_, i) => (
                     <FaStar key={i} size={18} className="text-primary" />
