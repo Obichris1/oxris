@@ -112,7 +112,7 @@ const Banner = () => {
     >
       <div className="absolute inset-0 bg-black/80"></div>
 
-      <div className="w-[80%] m-auto flex flex-col gap-10 relative z-1 text-white">
+      <div className="w-[80%] m-auto flex flex-col gap-10 relative z-1 text-gray-200">
         {/* Text section */}
         <div className="flex flex-col md:flex-row gap-10">
           {/* Left Text */}
@@ -148,12 +148,12 @@ const Banner = () => {
             variant="contained"
             color="primary"
             endIcon={<FaArrowRight />}
-            className="btn"
+            className="bg-primary !px-6 md:px-8 !py-3 rounded-lg btn"
           >
             Learn More
           </Button>
 
-          <div className="flex items-center justify-center gap-3">
+          <div className="flex items-center justify-center gap-2">
             {/* Phone Button */}
             <Button
               variant="contained"
@@ -171,15 +171,15 @@ const Banner = () => {
               //     color: "#007bff",
               //   },
               // }}
-              className="rounded-full p-4 md:p-4 bg-primary items-center justify-center"
+              className="rounded-full py-3 px-2 md:px-4 bg-primary items-center justify-center"
               component="a"
               href={`tel:08129614462`}
             >
-              <FaPhone size={15} />
+              <FaPhone size={12} />
             </Button>
 
             {/* Text outside the button */}
-            <Typography variant="h6" sx={{ fontWeight: "bold", color: "#fff" }}>
+            <Typography variant="h6" className="font-semibold text-lg">
               Call now
             </Typography>
           </div>
