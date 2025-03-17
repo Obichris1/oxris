@@ -106,41 +106,44 @@ const Banner = () => {
   }, []);
 
   return (
-    <div ref={bannerRef} className="relative w-full py-20 bg-[url('/tech5.jpeg')] bg-cover bg-center">
-     
-       <div className="absolute inset-0 bg-black/60"></div>
-    
+    <div
+      ref={bannerRef}
+      className="relative w-full py-20 bg-[url('/tech5.jpeg')] bg-cover bg-center"
+    >
+      <div className="absolute inset-0 bg-black/80"></div>
+
       <div className="w-[80%] m-auto flex flex-col gap-10 relative z-1 text-white">
         {/* Text section */}
         <div className="flex flex-col md:flex-row gap-10">
           {/* Left Text */}
-          <div ref={leftTextRef} className="flex flex-col gap-10 w-full md:w-1/2  opacity-0">
+          <div
+            ref={leftTextRef}
+            className="flex flex-col gap-10 w-full md:w-1/2  opacity-0"
+          >
             <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              tenetur natus magni totam obcaecati ipsam doloribus animi! Dolore
-              saepe eveniet asperiores optio corporis aliquam cupiditate quam
-              quasi eum repudiandae. Praesentium.
+              Oxris solutions, is a Nigerian based IT solutions Company with free website
+              consulting in Lagos.
             </Typography>
 
             <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              tenetur natus magni totam obcaecati ipsam doloribus animi! Dolore
-              saepe eveniet asperiores optio corporis aliquam cupiditate quam
-              quasi eum repudiandae. Praesentium.
+            At Tagdev, we understand that no one knows your business better than you. That’s why our team of experts takes the time to understand your unique needs and goals, 
+            working closely with you to develop a professionally written and beautifully designed website or app.
+             Beyond just development, we offer a range of services tailored to enhance your digital presence, 
+             ensuring your business stands out and thrives in today's competitive market.
             </Typography>
           </div>
 
           {/* Right Text */}
           <Typography ref={rightTextRef} className="md:w-1/2 w-full opacity-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            tenetur natus magni totam obcaecati ipsam doloribus animi! Dolore
-            saepe eveniet asperiores optio corporis aliquam cupiditate quam
-            quasi eum repudiandae. Praesentium.
+          Whether you're a startup, a growing company, or an established brand, we offer tailored services that ensure you are easily found, known, and trusted by your target audience.
           </Typography>
         </div>
 
         {/* Buttons & Stats */}
-        <div ref={statsRef} className="flex justify-between flex-col md:flex-row gap-10 items-center opacity-0">
+        <div
+          ref={statsRef}
+          className="flex justify-between flex-col md:flex-row gap-10 items-center opacity-0"
+        >
           <Button
             variant="contained"
             color="primary"
@@ -149,12 +152,11 @@ const Banner = () => {
           >
             Learn More
           </Button>
-    
+
           <div className="flex items-center justify-center gap-3">
             {/* Phone Button */}
             <Button
               variant="contained"
-           
               // sx={{
               //   backgroundColor: "#007bff",
               //   color: "#fff",
@@ -177,7 +179,7 @@ const Banner = () => {
             </Button>
 
             {/* Text outside the button */}
-            <Typography variant="h6" sx={{ fontWeight: "bold", color: "#fff", }}>
+            <Typography variant="h6" sx={{ fontWeight: "bold", color: "#fff" }}>
               Call now
             </Typography>
           </div>
@@ -191,7 +193,9 @@ const Banner = () => {
           {/* ✅ Success Rate (Now Working!) */}
           <div className="text-center" ref={successRef}>
             <h2 className="text-xl font-bold">Project Success Rate</h2>
-            <p className="text-3xl md:text-4xl font-extrabold mt-2">{successRate}%</p>
+            <p className="text-3xl md:text-4xl font-extrabold mt-2">
+              {successRate}%
+            </p>
           </div>
         </div>
       </div>

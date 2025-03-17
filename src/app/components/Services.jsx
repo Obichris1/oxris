@@ -8,30 +8,30 @@ import { Typography, Button } from "@mui/material";
 const services = [
   {
     icon: <FaLaptopCode className="text-4xl text-primary" />,
-    title: "Web & App Development",
+    title: "Website Development",
     description:
-      "We build scalable websites and mobile applications tailored to your business needs.",
+      "We build scalable websites tailored to your business needs.",
     link: "/Services/web-development",
   },
   {
     icon: <FaPaintBrush className="text-4xl text-primary" />,
-    title: "UI/UX Design",
+    title: "Corporate/Individual trainings",
     description:
-      "Crafting visually stunning and user-friendly designs that enhance user experience.",
+      "Our training program offers mordern tech skills training and side-to-side mentorship ",
     link: "/Services/ui-ux-design",
   },
   {
     icon: <FaDatabase className="text-4xl text-primary" />,
-    title: "Software Solutions",
+    title: "Digital Brand Expansion",
     description:
-      "Providing custom software solutions to streamline your business processes.",
+      "Our DBE program gives your business a complete online presence.  ",
     link: "/Services/software-solutions",
   },
   {
     icon: <FaUsers className="text-4xl text-primary" />,
-    title: "IT Consultation & Training",
+    title: "IT Consultation Services",
     description:
-      "Offering expert IT consultation and corporate training for individuals and businesses.",
+      "We offer expert advice customized to fit your unique business needs.",
     link: "/Services/it-consultation",
   },
 ];
@@ -62,9 +62,9 @@ const Services = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="w-full bg-gray-100 py-20 px-6">
-      <div className="max-w-6xl mx-auto text-center">
-        <Typography variant="h4" className="text-black font-bold mb-10">
+    <section ref={sectionRef} className="w-[90%] md:w-[80%] mx-auto  py-20 ">
+      <div className=" text-center">
+        <Typography variant="h4" className="text-black !font-bold !mb-10 !text-xl !md:text-3xl ">
           OUR SERVICES
         </Typography>
 
@@ -74,10 +74,10 @@ const Services = () => {
             <div
               key={index}
               ref={(el) => (cardRefs.current[index] = el)}
-              className="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center opacity-0 transform"
+              className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center text-center opacity-0 transform"
             >
               {service.icon}
-              <h3 className="text-xl font-semibold mt-4 text-black">
+              <h3 className="text-lg md:text-xl !font-semibold mt-4 text-black">
                 {service.title}
               </h3>
               <p className="text-gray-600 mt-2">{service.description}</p>
@@ -87,7 +87,7 @@ const Services = () => {
                 <Button
                   variant="text"
                   endIcon={<FaArrowRight />}
-                  className="text-black hover:underline"
+                  className="!text-gray-500 text-sm hover:underline"
                 >
                   Read More
                 </Button>

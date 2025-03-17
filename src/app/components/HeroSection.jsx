@@ -24,7 +24,7 @@ const HeroSection = () => {
 >
   {/* Animated Heading */}
   <motion.h1
-    className="text-xl md:text-4xl font-extrabold leading-tight"
+    className="text-2xl md:text-4xl font-extrabold leading-tight"
     initial={{ opacity: 0, y: -20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 0.5, duration: 1 }}
@@ -59,7 +59,7 @@ const HeroSection = () => {
 
     <Button
       variant="outlined"
-      className="bg-transparent text-white border-black hover:bg-white hover:text-primary hover:border-none"
+      className="bg-transparent !text-white !border-black hover:!bg-white hover:!text-primary hover:border-none "
     >
       Explore Services
     </Button>
