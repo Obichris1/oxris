@@ -23,18 +23,18 @@ const Footer = () => {
       <Image src='/logo-no-background.png' width={150} height={300} alt="logo" />
       </Link>
 
-          <div className="max-w-56">
-            <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa adipisci amet?
+          <div className="max-w-56 ">
+            <Typography className="text-black mt-2 !text-xs md:!text-sm ">
+            At Oxris Solutions, We Believe In The Power Of Being Found, Known, And Trusted.
             </Typography>
           </div>
 
           {/* Social Media Links */}
-          <div className="flex gap-3">
+          <div className="flex gap-3 mt-8">
             <Link
               href="https://www.instagram.com/dsquarevents/"
               target="_blank"
-              className="p-3 bg-[#E12F6C] rounded-full text-white hover:bg-transparent transition"
+              className="p-3 bg-[#E12F6C] rounded-full text-white hover:scale-75 transition"
             >
               <AiOutlineInstagram />
             </Link>
@@ -42,7 +42,7 @@ const Footer = () => {
             <Link
               href="https://www.facebook.com/profile.php?id=100090758267591&mibextid=ZbWKwL"
               target="_blank"
-              className="p-3 bg-[#3C5997] rounded-full text-white hover:bg-transparent transition"
+              className="p-3 bg-[#3C5997] rounded-full text-white hover:scale-75 transition"
             >
               <AiFillFacebook />
             </Link>
@@ -50,7 +50,7 @@ const Footer = () => {
             <Link
               href="https://x.com/DEventcent23511"
               target="_blank"
-              className="p-3 bg-[#000] rounded-full text-white hover:bg-transparent transition"
+              className="p-3 bg-[#000] rounded-full text-white hover:scale-75 transition"
             >
               <AiOutlineX />
             </Link>
@@ -59,32 +59,33 @@ const Footer = () => {
 
         {/* Company Section */}
         <div className="text-black text-sm flex flex-col gap-3 w-full md:w-[20%]">
-          <Typography className="font-bold uppercase mb-2">
+          <Typography className="font-bold uppercase mb-2 text-gray-400">
             Company
           </Typography>
-          <Link href="/about" className="hover:text-white transition">About Us</Link>
-          <Link href="/careers" className="hover:text-white transition">Careers</Link>
-          <Link href="/faq" className="hover:text-white transition">FAQs</Link>
+          <Link href="/about" className="hover:text-primary  transition !text-xs md:!text-sm">About Us</Link>
+          <Link href="/careers" className="hover:text-primary  transition !text-xs md:!text-sm">Works</Link>
+          <Link href="/faq" className="hover:text-primary  transition !text-xs md:!text-sm">FAQs</Link>
         </div>
 
         {/* Services Section */}
         <div className="text-sm flex flex-col gap-3 w-full md:w-[20%]">
-          <Typography className="font-bold uppercase mb-2">
+          <Typography className="font-bold uppercase mb-2 text-gray-400">
             Our Services
           </Typography>
-          <Link href="/services/web-development" className="hover:text-white transition">Web Development</Link>
-          <Link href="/services/app-development" className="hover:text-white transition">App Development</Link>
-          <Link href="/services/training" className="hover:text-white transition">Software Training</Link>
+          <Link href="/services/web-development" className="hover:text-primary transition !text-xs md:!text-sm">Software Development</Link>
+          <Link href="/services/app-development" className="hover:text-primary  transition !text-xs md:!text-sm">App Development</Link>
+          <Link href="/services/training" className="hover:text-primary  transition !text-xs md:!text-sm">Digital Brand Expansion</Link>
+          <Link href="/services/training" className="hover:text-primary  transition !text-xs md:!text-sm">IT Consultation Services</Link>
         </div>
 
         {/* Contact Info Section */}
         <div className="text-sm flex flex-col gap-3 w-full md:w-[20%]">
-          <Typography className="font-bold uppercase mb-2">
+          <Typography className="font-bold uppercase mb-2 text-gray-400" >
             Contact Info
           </Typography>
-          <Link href="tel:+2348012345678" className="hover:text-white transition">+234 801 234 5678</Link>
-          <Link href="mailto:support@dxristech.com" className="hover:text-white transition">support@dxristech.com</Link>
-          <Link href="https://goo.gl/maps/X123456" className="hover:text-white transition">Lagos, Nigeria</Link>
+          <Link href="tel:+2348012345678" className="hover:text-primary  transition !text-xs md:!text-sm">+234 812 961 4462</Link>
+          <Link href="mailto:support@dxristech.com" className="hover:text-primary  transition !text-xs md:!text-sm">support@oxrissolutions.com</Link>
+          <Link href="https://goo.gl/maps/X123456" className="hover:text-primary  transition !text-xs md:!text-sm">Lagos, Nigeria.</Link>
         </div>
       </div>
 

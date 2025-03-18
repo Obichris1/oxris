@@ -64,7 +64,7 @@ const Services = () => {
   return (
     <section ref={sectionRef} className="w-[90%] md:w-[80%] mx-auto  ">
       <div className=" text-center">
-        <Typography variant="h4" className="text-black !font-bold !mb-10 !text-3xl md:text-5xl ">
+        <Typography variant="h2" className="text-black !font-bold !mb-8 !text-xl md:!text-3xl ">
           OUR SERVICES
         </Typography>
 
@@ -77,17 +77,17 @@ const Services = () => {
               className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center text-center opacity-0 transform"
             >
               {service.icon}
-              <h3 className="text-lg md:text-xl !font-semibold mt-4 text-black">
+              <h3 className="text-[16px] md:text-lg font-bold mt-4 text-black">
                 {service.title}
               </h3>
-              <p className="text-gray-600 mt-2">{service.description}</p>
+              <p className="text-gray-600 mt-2 text-sm md:text-[16px]">{service.description}</p>
 
               {/* Read More Button */}
               <Link href={service.link} passHref>
                 <Button
                   variant="text"
                   endIcon={<FaArrowRight />}
-                  className="!text-gray-500 text-sm hover:underline"
+                  className="!text-gray-500 !text-sm mt-4 hover:underline"
                 >
                   Read More
                 </Button>

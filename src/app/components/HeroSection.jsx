@@ -34,7 +34,7 @@ const HeroSection = () => {
 
   {/* Subtitle */}
   <motion.p
-    className="mt-4 text-lg md:text-xl text-gray-200"
+    className="mt-4 text-lg md:text-xl text-gray-400"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ delay: 1, duration: 1 }}
