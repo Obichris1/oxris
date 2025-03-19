@@ -57,7 +57,7 @@ const TestimonialSection = () => {
               <CardContent className="flex flex-col items-center text-center p-8">
                 <FaQuoteLeft size={60} className="text-primary" />
                 <h3 className=" text-lg text-black mt-4">{testimonial.name}</h3>
-                <p className="text-sm text-gray-500 font-semibold">
+                <p className="text-sm text-gray-400 font-semibold">
                   {testimonial.title}
                 </p>
                 <div className="flex mt-2">

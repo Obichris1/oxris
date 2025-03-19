@@ -120,12 +120,12 @@ const Banner = () => {
             ref={leftTextRef}
             className="flex flex-col gap-10 w-full md:w-1/2  opacity-0 "
           >
-            <Typography className="!text-gray-300 !text-sm md:text-lg ">
+            <Typography className="!text-gray-300 !text-[16px] md:!text-lg ">
               Oxris solutions, is a Nigerian based IT solutions Company with free website
               consulting in Lagos.
             </Typography>
 
-            <Typography className="!text-gray-300 !text-sm md:text-lg">
+            <Typography className="!text-gray-300 !text-[16px] md:!text-lg">
             At Oxris Solutions, we understand that no one knows your business better than you. That’s why our team of experts takes the time to understand your unique needs and goals, 
             working closely with you to develop a professionally written and beautifully designed website or app.
 Beyond just development, we offer a range of services tailored to enhance your digital presence, 
@@ -134,7 +134,7 @@ Beyond just development, we offer a range of services tailored to enhance your d
           </div>
 
           {/* Right Text */}
-          <Typography ref={rightTextRef} className="md:w-1/2 w-full opacity-0 !text-gray-300 !text-sm md:text-lg">
+          <Typography ref={rightTextRef} className="md:w-1/2 w-full opacity-0 !text-gray-300 !text-[16px] md:!text-lg">
           Whether you're a startup, a growing company, or an established brand, we offer tailored services that ensure you are easily found, known, and trusted by your target audience.
           </Typography>
         </div>
@@ -171,7 +171,7 @@ Beyond just development, we offer a range of services tailored to enhance your d
               //     color: "#007bff",
               //   },
               // }}
-              className="rounded-full !py-3 !px-2 md:px-4 md:py-4 !bg-primary items-center justify-center"
+              className="!rounded-full !py-3 !px-2 md:px-4 md:py-4 !bg-primary items-center justify-center"
               component="a"
               href={`tel:08129614462`}
             >
@@ -179,7 +179,7 @@ Beyond just development, we offer a range of services tailored to enhance your d
             </Button>
 
             {/* Text outside the button */}
-            <Typography variant="h6" className="font-semibold text-lg md:text-lg text-gray-300">
+            <Typography variant="h6" className="!font-semibold !text-sm md:!text-lg text-gray-300">
               Call now
             </Typography>
           </div>
