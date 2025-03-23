@@ -8,7 +8,7 @@ import FAQSection from '../components/Faq'
 
 const page = () => {
   return (
-    <div>
+    <div className='space-y-8 py-12'>
         <AboutUs />
         <Team />
         <FAQSection />

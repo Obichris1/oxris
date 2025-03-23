@@ -41,7 +41,7 @@ const ServiceDetail = () => {
   return (
     <div className="flex flex-col md:flex-row w-full  mx-auto p-6 gap-10">
       {/* Side Navigation */}
-      <nav className="w-full md:w-1/6 p-4 rounded-lg shadow-md">
+      <nav className="w-full md:w-1/5  p-4 rounded-lg shadow-md bg-white">
         <Typography variant="h6" className="font-bold mb-4 uppercase text-center text-lg">Services</Typography>
         <ul className="space-y-2 text-sm">
           {Object.keys(serviceDetails).map((key) => (
@@ -72,7 +72,7 @@ const ServiceDetail = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="w-full md:w-2/3"
         >
-          <Typography variant="h4" className="font-bold mb-4">
+          <Typography variant="h4" className="font-bold mb-4 text-center">
             {data.title}
           </Typography>
           <Typography variant="body1" className="text-gray-600 leading-7">

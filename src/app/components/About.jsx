@@ -7,49 +7,107 @@ import Link from 'next/link';
 
 const AboutUs = () => {
   return (
-    <Box id="about" sx={{ py: 10, px: 3, maxWidth: '1200px', mx: 'auto' }}>
-      <Grid container spacing={4} alignItems="center">
-        {/* Text Section */}
-        <Grid item xs={12} md={6}>
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Typography variant="h4" fontWeight="bold" gutterBottom>
-              About d’xris tech
-            </Typography>
-            <Typography variant="body1" sx={{ color: 'text.secondary', mb: 3 }}>
-              At d’xris tech, we specialize in crafting cutting-edge digital solutions, including
-              website and app development, personalized software training, and UI/UX design.
-              Our mission is to empower businesses with innovative and user-friendly technology.
-            </Typography>
-            <Link href="#services" passHref>
-              <Button variant="contained" color="primary" sx={{ mt: 2 }}>
-                Explore Our Services
-              </Button>
-            </Link>
-          </motion.div>
-        </Grid>
+    <div id="about" className="w-full m-auto ">
 
-        {/* Image Section */}
-        <Grid item xs={12} md={6}>
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Image
-              src="/tech7.webp" // Replace with actual image path
-              alt="About Us"
-              width={500}
-              height={350}
-              style={{ borderRadius: '12px', width: '100%', height: 'auto' }}
-            />
-          </motion.div>
+      <div className='w-[80%] m-auto '>
+        <Grid container spacing={6} alignItems="center"> {/* Increased spacing */}
+          {/* Text Section */}
+          <Grid item xs={12} md={6}>
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <Typography variant="h4" fontWeight="bold" className='text-center !mb-6'>
+                About Us
+              </Typography>
+              <Typography variant="body1" sx={{ color: 'text.secondary', mb: 6 }}> {/* Increased mb */}
+                At Oxris Solutions, we specialize in crafting cutting-edge digital solutions, including
+                website and app development, personalized software training, and UI/UX design.
+                Our mission is to empower businesses with innovative and user-friendly technology.
+              </Typography>
+
+              <Typography variant="body1" sx={{ color: 'text.secondary', mb: 6 }}> {/* Increased mb */}
+                We craft stunning website designs, revamps, and mobile apps, bringing brands to life with exceptional corporate branding, eCommerce solutions, and interactive multimedia experiences. Our expertise extends to graphics design, motion graphics, professional training, hosting, and maintenance—tailored for businesses of all sizes.
+                
+              </Typography>
+
+              <Link href="#services" passHref>
+                <Button variant="contained" className="btn">
+                  Explore Our Services
+                </Button>
+              </Link>
+            </motion.div>
+          </Grid>
+
+          {/* Image Section */}
+          <Grid item xs={12} md={6}>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <Image
+                src="/tech7.webp" // Replace with actual image path
+                alt="About Us"
+                width={500}
+                height={350}
+                style={{ borderRadius: '12px', width: '100%', height: 'auto' }}
+              />
+            </motion.div>
+          </Grid>
         </Grid>
-      </Grid>
-    </Box>
+      </div>
+
+      {/* Positioned to deliver on your needs Section */}
+      <div className="bg-[url('/tech10.webp')] bg-center relative bg-cover py-40 mt-20 text-center rounded-lg text-white"> {/* Increased padding and margin */}
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/80 z-0"></div>
+
+        {/* Animated Content */}
+        <motion.div 
+          className="relative z-1"
+          initial={{ opacity: 0, y: 30 }} 
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <motion.div 
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <Typography variant="h4" fontWeight="bold" className="text-gray-200 mb-6">
+              Positioned to deliver on your needs.
+            </Typography>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <Typography variant="body1" className="text-gray-300 w-[85%] md:w-[65%] mx-auto mb-6"> {/* Increased mb */}
+              We constantly strive to bring market-leading products and solutions that meet specific business needs.
+              Our team is highly experienced in identifying market trends, defining solutions, and delivering
+              high-performing systems based on SAAS and enterprise licensing models.
+            </Typography>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            <Typography variant="body1" className="text-gray-300 w-[85%] md:w-[65%] mx-auto">
+              At Oxris Solutions, we believe that every business challenge is unique and requires a tailored approach.
+              By collaborating closely with our clients, we combine industrial expertise with technical innovation
+              to create solutions that drive success.
+            </Typography>
+          </motion.div>
+        </motion.div>
+      </div>
+    </div>
   );
 };
 

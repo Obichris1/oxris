@@ -14,7 +14,7 @@ import {
 
 const Page = () => {
   return (
-    <div className="w-[80%] m-auto flex flex-col md:flex-row justify-center p-8 items-center gap-10">
+    <div className="w-full md:w-[80%] m-auto flex flex-col md:flex-row justify-center p-8 items-center gap-10">
       {/* Contact Information - Slides in from the left */}
       <motion.div
         initial={{ opacity: 0, x: -100 }}
@@ -22,39 +22,39 @@ const Page = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="flex flex-col gap-4 w-full md:w-[50%]"
       >
-        <Typography variant="h4" className="font-bold">
+        <Typography variant="h4" className="!font-semibold text-2xl md:text-3xl text-center md:text-left">
           REACH OUT TO US
         </Typography>
 
         <hr />
 
-        <Typography variant="h6">CONTACT</Typography>
+       
 
         <div className="text-[#aaa5a5] text-xs md:text-sm flex flex-col gap-3">
-          <Typography className="font-bold uppercase text-[#aaa5a5] mb-4">
+          <Typography className="font-bold uppercase text-gray-500 mb-4">
             Contact Info
           </Typography>
 
-          <span className="flex items-center gap-4">
+          <span className="flex items-center gap-4 text-gray-500">
             <AiOutlineMail className="text-lg" />
-            <Link href="mailto:dolaposquare123@gmail.com?subject=Inquiry&body=Hello, I have a question...">
-              dolaposquare123@gmail.com
+            <Link href="mailto:obichris202@gmail.com?subject=Inquiry&body=Hello, I want to make enquiries..." className="hover:text-primary">
+             obichris202@gmail.com
             </Link>
           </span>
-          <span className="flex items-center gap-4">
+          <span className="flex items-center gap-4 text-gray-500 ">
             <AiOutlinePhone className="text-lg" />
-            <Link href="tel:+2349165235934">+234 916 523 5934</Link>
+            <Link href="tel:+2348129614462" className="hover:text-primary">+234 812 961 4462</Link>
           </span>
         </div>
 
           {/* SOCIAL MEDIA  */}
-          <div className="flex  self-end items-center gap-4">
+          <div className="flex  md:self-end  items-center gap-4 mt-3">
 
 
 <Link
   href="https://www.instagram.com/dsquarevents/"
   target="_blank"
-  className="p-3 bg-[#E12F6C] rounded-full text-white hover:bg-transparent"
+  className="p-3 bg-[#E12F6C] rounded-full text-white hover:scale-75 transition"
 >
   <AiOutlineInstagram />
 </Link>
@@ -62,7 +62,7 @@ const Page = () => {
 <Link
   href="https://www.facebook.com/profile.php?id=100090758267591&mibextid=ZbWKwL"
   target="_blank"
-  className="p-3 bg-[#3C5997] rounded-full text-white hover:bg-transparent"
+  className="p-3 bg-[#3C5997] rounded-full text-white hover:scale-75 transition"
 >
   <AiFillFacebook />
 </Link>
@@ -70,7 +70,7 @@ const Page = () => {
 <Link
   href="https://x.com/DEventcent23511"
   target="_blank"
-  className="p-3 bg-[#000] rounded-full text-white hover:bg-transparent"
+  className="p-3 bg-[#000] rounded-full text-white hover:scale-75 transition"
 >
   <AiOutlineX />
 </Link>

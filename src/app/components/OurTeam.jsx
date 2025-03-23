@@ -7,19 +7,19 @@ import Image from "next/image";
 const teamMembers = [
   {
     name: "Chris Obi",
-    role: "Developer",
-    image: "/Obinna.jpeg",
+    role: "Lead Developer",
+    image: "/Obinna3.jpeg",
   },
   {
     name: "Mayowa",
     role: "Strategist",
-    image: "/Mayowa.jpeg",
+    image: "/Mayowa2.jpeg",
   },
-  // {
-  //   name: "Michael Smith",
-  //   role: "Software Engineer",
-  //   image: "/team/michael.jpg",
-  // },
+  {
+    name: "Chibuikem",
+    role: "Backend/Mobile developer",
+    image: "/chibuikem.jpeg",
+  },
 ];
 
 const Team = () => {
@@ -45,8 +45,8 @@ const Team = () => {
   return (
     <section ref={sectionRef} className="w-full  py-20 px-6">
       <div className="max-w-6xl mx-auto text-center ">
-        <h2 className="text-4xl font-bold mb-6">Meet Our Team</h2>
-        <p className="text-lg text-gray-300 leading-relaxed mb-10">
+        <h2 className="text-4xl font-bold mb-6 text-black">Meet Our Team</h2>
+        <p className="text-lg text-gray-400 leading-relaxed mb-10">
           Our team consists of passionate and highly skilled professionals dedicated to delivering the best IT solutions.
         </p>
 
@@ -61,8 +61,8 @@ const Team = () => {
               <Image
                 src={member.image}
                 alt={member.name}
-                className=""
-                width={400}
+                className="object-cover h-full w-full"
+                width={300}
                 height={400}
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">

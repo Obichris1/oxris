@@ -83,7 +83,7 @@ const Footer = () => {
           <Typography className="font-bold uppercase mb-2 text-gray-400" >
             Contact Info
           </Typography>
-          <Link href="tel:+2348012345678" className="hover:text-primary  transition !text-xs md:!text-sm">+234 812 961 4462</Link>
+          <Link href="tel:+2348129614462" className="hover:text-primary  transition !text-xs md:!text-sm">+234 812 961 4462</Link>
           <Link href="mailto:support@dxristech.com" className="hover:text-primary  transition !text-xs md:!text-sm">support@oxrissolutions.com</Link>
           <Link href="https://goo.gl/maps/X123456" className="hover:text-primary  transition !text-xs md:!text-sm">Lagos, Nigeria.</Link>
         </div>

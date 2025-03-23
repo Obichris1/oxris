@@ -6,10 +6,11 @@ import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 
 const faqs = [
-  { question: 'What services does d\'xris tech offer?', answer: 'We offer website and app development, personal and corporate software training, and UI/UX design.' },
-  { question: 'How can I contact d\'xris tech?', answer: 'You can reach us via email at obichris202@gmail.com or call us at 08129614462.' },
-  { question: 'Do you provide training for beginners?', answer: 'Yes! We offer training programs suitable for beginners and advanced learners.' },
-  { question: 'Can you develop a custom software solution for my business?', answer: 'Absolutely! We specialize in custom software solutions tailored to your needs.' }
+  { question: 'What services does Oxris Solutions offer?', answer: 'We offer website and app development, personal and corporate software training, and complete business digitalization.' },
+  { question: 'Can I get a free quote for my project?', answer: 'Yes, our project and business development quotes are free!' },
+  { question: 'Are there installmental payment plans?', answer: 'Absolutely! We offer very flexible and budget-friendly payment plans.' },
+  { question: 'Can you develop a custom software solution for my business?', answer: 'Absolutely! We specialize in custom software solutions tailored to your needs.' },
+  { question: 'Do you offer one-on-one private trainings?', answer: 'Yes, we offer training to individuals, corporate organizations, and private schools, both physically and online.' }
 ];
 
 export default function FAQSection() {
@@ -38,33 +39,40 @@ export default function FAQSection() {
   }, []);
 
   return (
-    <div className="w-[80%] m-auto" ref={ref}>
+    <div className="w-[85%] md:w-[70%] lg:w-[60%] self-start mx-auto" ref={ref}>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.5 }}
+        className="text-center mb-8"
       >
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" className="font-bold text-primary-main">
           Frequently Asked Questions
         </Typography>
+        <Typography className="text-gray-500 mt-2">
+          Here are some of the common questions we get from our clients.
+        </Typography>
       </motion.div>
-      {faqs.map((faq, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, y: 10 }}
-          animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
-          transition={{ duration: 0.3, delay: index * 0.1 }}
-        >
-          <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography>{faq.question}</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>{faq.answer}</Typography>
-            </AccordionDetails>
-          </Accordion>
-        </motion.div>
-      ))}
+
+      <div className="space-y-4">
+        {faqs.map((faq, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 10 }}
+            animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+            transition={{ duration: 0.3, delay: index * 0.1 }}
+          >
+            <Accordion className="shadow-md rounded-xl">
+              <AccordionSummary expandIcon={<ExpandMoreIcon className="" />}>
+                <Typography className="font-semibold text-gray-800">{faq.question}</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography className="text-gray-500">{faq.answer}</Typography>
+              </AccordionDetails>
+            </Accordion>
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 }
