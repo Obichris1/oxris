@@ -120,12 +120,12 @@ const Banner = () => {
             ref={leftTextRef}
             className="flex flex-col gap-10 w-full md:w-1/2  opacity-0 "
           >
-            <Typography className="!text-gray-300 !text-[16px] md:!text-lg ">
+            <Typography className="!text-gray-300 !text-[14px] md:!text-[16px] ">
               Oxris solutions, is a Nigerian based IT solutions Company with free website
               consulting in Lagos.
             </Typography>
 
-            <Typography className="!text-gray-300 !text-[16px] md:!text-lg">
+            <Typography className="!text-gray-300 !text-[14px] md:!text-[16px]">
             At Oxris Solutions, we understand that no one knows your business better than you. That’s why our team of experts takes the time to understand your unique needs and goals, 
             working closely with you to develop a professionally written and beautifully designed website or app.
 Beyond just development, we offer a range of services tailored to enhance your digital presence, 
@@ -134,7 +134,7 @@ Beyond just development, we offer a range of services tailored to enhance your d
           </div>
 
           {/* Right Text */}
-          <Typography ref={rightTextRef} className="md:w-1/2 w-full opacity-0 !text-gray-300 !text-[16px] md:!text-lg">
+          <Typography ref={rightTextRef} className="md:w-1/2 w-full opacity-0 !text-gray-300 !text-[14px] md:!text-[16px]">
           Whether you're a startup, a growing company, or an established brand, we offer tailored services that ensure you are easily found, known, and trusted by your target audience.
           </Typography>
         </div>
@@ -153,36 +153,6 @@ Beyond just development, we offer a range of services tailored to enhance your d
             Learn More
           </Button>
 
-          <div className="flex items-center justify-center gap-2">
-            {/* Phone Button */}
-            <Button
-              variant="contained"
-              // sx={{
-              //   backgroundColor: "#007bff",
-              //   color: "#fff",
-              //   minWidth: "50px",
-              //   height: "50px",
-              //   display: "flex",
-              //   justifyContent: "center",
-              //   alignItems: "center",
-              //   borderRadius: "50%",
-              //   "&:hover": {
-              //     backgroundColor: "#fff",
-              //     color: "#007bff",
-              //   },
-              // }}
-              className="!rounded-full !py-3 !px-2 md:px-4 md:py-4 !bg-primary items-center justify-center"
-              component="a"
-              href={`tel:08129614462`}
-            >
-              <FaPhone size={12} />
-            </Button>
-
-            {/* Text outside the button */}
-            <Typography variant="h6" className="!font-semibold !text-sm md:!text-lg text-gray-300">
-              Call now
-            </Typography>
-          </div>
 
           {/* Years */}
           <div className="text-center">

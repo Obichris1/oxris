@@ -28,7 +28,8 @@ const AboutUs = () => {
               </Typography>
 
               <Typography variant="body1" sx={{ color: 'text.secondary', mb: 6 }}> {/* Increased mb */}
-                We craft stunning website designs, revamps, and mobile apps, bringing brands to life with exceptional corporate branding, eCommerce solutions, and interactive multimedia experiences. Our expertise extends to graphics design, motion graphics, professional training, hosting, and maintenance—tailored for businesses of all sizes.
+              We deliver premium website design and redesign services, mobile app development, corporate branding, eCommerce solutions, interactive multimedia experiences, graphic and motion design,
+               professional training, and reliable hosting and maintenance solutions for businesses of all scales.
                 
               </Typography>
 
@@ -87,7 +88,7 @@ const AboutUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <Typography variant="body1" className="text-gray-300 w-[85%] md:w-[65%] mx-auto mb-6"> {/* Increased mb */}
+            <Typography variant="body1" className="text-gray-300 w-[85%] md:w-[65%] !mx-auto !mb-6"> {/* Increased mb */}
               We constantly strive to bring market-leading products and solutions that meet specific business needs.
               Our team is highly experienced in identifying market trends, defining solutions, and delivering
               high-performing systems based on SAAS and enterprise licensing models.

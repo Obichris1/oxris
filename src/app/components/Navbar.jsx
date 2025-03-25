@@ -156,7 +156,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <Button variant="contained" className="!hidden lg:!flex btn">
+        <Button variant="contained" className="!hidden lg:!flex !bg-primary !px-4 !py-3 !text-sm  btn">
   Get a Quote
 </Button>
 

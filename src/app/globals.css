@@ -72,14 +72,13 @@ p{
   .btn {
    
     background-color: #800080;
-    font-size: 14px;
     border-radius: 8px;
     font-weight: lighter;
     color: white;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    animation: beep 2.0s infinite ease-in-out; /* Beeping effect */
+    animation: beep 0.5s infinite ease-in-out; /* Beeping effect */
   }
 
   p{
