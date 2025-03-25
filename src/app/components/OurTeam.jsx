@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Image from "next/image";
+import { Typography } from "@mui/material";
 
 // Team members' data
 const teamMembers = [
@@ -43,12 +44,12 @@ const Team = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="w-full  py-20 px-6">
+    <section ref={sectionRef} className="w-full py-20 px-6">
       <div className="max-w-6xl mx-auto text-center ">
-        <h2 className="text-4xl font-bold mb-6 text-black">Meet Our Team</h2>
-        <p className="text-lg text-gray-400 leading-relaxed mb-10">
+        <Typography className="!text-2xl md:!text-3xl !font-bold !mb-4 !text-black">Meet Our Team</Typography>
+        <Typography className="md:text-base text-sm text-gray-400 leading-relaxed !mb-10">
           Our team consists of passionate and highly skilled professionals dedicated to delivering the best IT solutions.
-        </p>
+        </Typography>
 
         {/* Team Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

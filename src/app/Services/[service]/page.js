@@ -8,25 +8,25 @@ import { motion } from "framer-motion";
 // Service Data
 const serviceDetails = {
   "web-development": {
-    title: "Web & App Development",
+    title: "Website Development",
     description:
       "We specialize in building scalable, responsive, and high-performance web and mobile applications tailored to your business needs. Our team ensures that every digital solution is optimized for user experience and business growth.",
     image: "/tech4.jpg",
   },
   "ui-ux-design": {
-    title: "UI/UX Design",
+    title: "Corporate/Individual trainings",
     description:
       "We create visually stunning and user-friendly designs that enhance user experience and drive engagement. From wireframes to high-fidelity designs, we craft intuitive interfaces that captivate and convert users.",
     image: "/tech1.jpg",
   },
   "software-solutions": {
-    title: "Software Solutions",
+    title: "Digital Brand Expansion",
     description:
       "Providing custom software solutions to streamline and automate your business operations. Whether it's enterprise applications, workflow automation, or cloud-based systems, we build solutions that scale with your business.",
     image: "/tech7.webp",
   },
   "it-consultation": {
-    title: "IT Consultation & Training",
+    title: "IT Consultation Services",
     description:
       "Offering expert IT consultation and corporate training programs to enhance technological proficiency. We help businesses and individuals stay ahead in the tech landscape with industry-relevant skills and strategies.",
     image: "/tech6.webp",
@@ -47,7 +47,7 @@ const ServiceDetail = () => {
           {Object.keys(serviceDetails).map((key) => (
             <li key={key}>
               <Link
-                href={`/Services/${key}`}
+                href={`/services/${key}`}
                 className={`block px-3 py-2 rounded-lg font-medium transition duration-300 ${
                   serviceKey === key ? "bg-purple-600 text-white" : ""
                 }`}
@@ -64,7 +64,7 @@ const ServiceDetail = () => {
         initial={{ opacity: 0, x: 50 }} 
         animate={{ opacity: 1, x: 0 }} 
         transition={{ duration: 0.8 }}
-        className="w-full md:w-4/5 p-6 rounded-lg  flex flex-col items-center gap-8"
+        className="w-full md:w-full p-6 rounded-lg  flex flex-col items-center gap-8"
       >
         <motion.div 
           initial={{ opacity: 0, x: -50 }} 

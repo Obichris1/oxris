@@ -11,28 +11,28 @@ const services = [
     title: "Website Development",
     description:
       "We build scalable websites tailored to your business needs.",
-    link: "/Services/web-development",
+    link: "/services/web-development",
   },
   {
     icon: <FaPaintBrush className="text-4xl text-primary" />,
     title: "Corporate/Individual trainings",
     description:
       "Our training program offers mordern tech skills training and side-to-side mentorship ",
-    link: "/Services/ui-ux-design",
+    link: "/services/ui-ux-design",
   },
   {
     icon: <FaDatabase className="text-4xl text-primary" />,
     title: "Digital Brand Expansion",
     description:
       "Our DBE program gives your business a complete online presence.  ",
-    link: "/Services/software-solutions",
+    link: "/services/software-solutions",
   },
   {
     icon: <FaUsers className="text-4xl text-primary" />,
     title: "IT Consultation Services",
     description:
       "We offer expert advice customized to fit your unique business needs.",
-    link: "/Services/it-consultation",
+    link: "/services/it-consultation",
   },
 ];
 

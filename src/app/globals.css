@@ -78,7 +78,7 @@ p{
     border: none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    animation: beep 0.5s infinite ease-in-out; /* Beeping effect */
+    animation: beep 3s infinite ease-in-out; /* Beeping effect */
   }
 
   p{

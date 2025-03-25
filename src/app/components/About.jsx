@@ -18,23 +18,23 @@ const AboutUs = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <Typography variant="h4" fontWeight="bold" className='text-center !mb-6'>
+              <Typography variant="h4" fontWeight="bold" className='text-center !text-2xl md:!text-3xl !mb-6'>
                 About Us
               </Typography>
-              <Typography variant="body1" sx={{ color: 'text.secondary', mb: 6 }}> {/* Increased mb */}
-                At Oxris Solutions, we specialize in crafting cutting-edge digital solutions, including
+              <Typography variant="body1"  className='mb-6 text-gray-500 text-sm md:text-base'> {/* Increased mb */}
+                 <span className='text-primary'>Oxris Solutions</span> specializes in crafting cutting-edge digital solutions, including
                 website and app development, personalized software training, and UI/UX design.
                 Our mission is to empower businesses with innovative and user-friendly technology.
               </Typography>
 
-              <Typography variant="body1" sx={{ color: 'text.secondary', mb: 6 }}> {/* Increased mb */}
+              <Typography variant="body1" className='mb-6 text-gray-500 text-sm md:text-base'> {/* Increased mb */}
               We deliver premium website design and redesign services, mobile app development, corporate branding, eCommerce solutions, interactive multimedia experiences, graphic and motion design,
                professional training, and reliable hosting and maintenance solutions for businesses of all scales.
                 
               </Typography>
 
               <Link href="#services" passHref>
-                <Button variant="contained" className="btn">
+                <Button variant="contained" className="!hidden lg:!flex !bg-primary !px-4 !py-3 !text-sm !mt-12  btn">
                   Explore Our Services
                 </Button>
               </Link>
@@ -78,7 +78,7 @@ const AboutUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <Typography variant="h4" fontWeight="bold" className="text-gray-200 mb-6">
+            <Typography variant="h4" fontWeight="bold" className="text-gray-200 !text-2xl md:!text-3xl !mb-6">
               Positioned to deliver on your needs.
             </Typography>
           </motion.div>
@@ -88,7 +88,7 @@ const AboutUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <Typography variant="body1" className="text-gray-300 w-[85%] md:w-[65%] !mx-auto !mb-6"> {/* Increased mb */}
+            <Typography variant="body1" className="!text-gray-300 !text-sm md:!text-base  !w-[85%] md:w-[65%] !mx-auto !mb-6 max-w-5xl"> {/* Increased mb */}
               We constantly strive to bring market-leading products and solutions that meet specific business needs.
               Our team is highly experienced in identifying market trends, defining solutions, and delivering
               high-performing systems based on SAAS and enterprise licensing models.
@@ -100,7 +100,7 @@ const AboutUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <Typography variant="body1" className="text-gray-300 w-[85%] md:w-[65%] mx-auto">
+            <Typography variant="body1" className="!text-gray-300 w-[85%] !text-sm md:!text-base md:w-[65%] !mx-auto">
               At Oxris Solutions, we believe that every business challenge is unique and requires a tailored approach.
               By collaborating closely with our clients, we combine industrial expertise with technical innovation
               to create solutions that drive success.

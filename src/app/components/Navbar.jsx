@@ -57,10 +57,10 @@ const Navbar = () => {
 
  
   const services = [
-    { name: "Web Development", path: "/Services/web-development" },
-    { name: "App Development", path: "/Services/software-solutions" },
-    { name: "UI/UX Design", path: "/Services/ui-ux-design" },
-    { name: "Software Training", path: "/Services/it-consultation" },
+    { name: "Web Development", path: "/services/web-development" },
+    { name: "Corporate/Individual training", path: "/services/software-solutions" },
+    { name: "Digital Brand Expansion ", path: "/services/ui-ux-design" },
+    { name: "IT Consultation", path: "/services/it-consultation" },
   ];
 
   return (
