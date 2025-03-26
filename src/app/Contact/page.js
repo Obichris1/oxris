@@ -22,7 +22,7 @@ const Page = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="flex flex-col gap-4 w-full md:w-[50%]"
       >
-        <Typography variant="h4" className="!font-semibold text-2xl md:text-3xl text-center md:text-left">
+        <Typography variant="h4" className="!font-semibold !text-2xl md:!text-3xl !text-center md:!text-left">
           REACH OUT TO US
         </Typography>
 
@@ -31,9 +31,9 @@ const Page = () => {
        
 
         <div className="text-[#aaa5a5] text-xs md:text-sm flex flex-col gap-3">
-          <Typography className="font-bold uppercase text-gray-500 mb-4">
+          {/* <Typography className="font-bold uppercase text-black mb-4">
             Contact Info
-          </Typography>
+          </Typography> */}
 
           <span className="flex items-center gap-4 text-gray-500">
             <AiOutlineMail className="text-lg" />

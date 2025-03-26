@@ -143,7 +143,7 @@ export default function ContactForm() {
         {/* Submit Button */}
         <Button
           type="submit"
-          className="w-full py-3 bg-primary text-white hover:scale-105 hover:shadow-md transition-transform font-bold text-lg rounded-md"
+          className="w-full !py-3 !bg-black text-white hover:scale-105 hover:shadow-md transition-transform font-bold text-lg rounded-md"
         >
           {isLoading ? (
             <CircularProgress size={20} className="text-white" />
