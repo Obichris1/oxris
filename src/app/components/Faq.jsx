@@ -46,7 +46,7 @@ export default function FAQSection() {
         transition={{ duration: 0.5 }}
         className="text-center mb-8"
       >
-        <Typography variant="h4" className="!font-bold t!ext-2xl md:!text-3xl">
+        <Typography variant="h4" className="!font-bold !text-2xl md:!text-3xl">
           Frequently Asked Questions
         </Typography>
         <Typography className="text-gray-500 mt-2 text-sm md:text-base ">
