@@ -49,7 +49,7 @@ export default function FAQSection() {
         <Typography variant="h4" className="!font-bold !text-2xl md:!text-3xl">
           Frequently Asked Questions
         </Typography>
-        <Typography className="text-gray-500 mt-2 text-sm md:text-base ">
+        <Typography className="text-gray-500 mt-4 text-sm md:text-base ">
           Here are some of the common questions we get from our clients.
         </Typography>
       </motion.div>
