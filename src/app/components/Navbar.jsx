@@ -12,8 +12,7 @@ const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
   const [color, setColor] = useState(false);
-    const isMenuOpen = Boolean(anchorEl);
-
+  const isMenuOpen = Boolean(anchorEl);
 
   const showMenu = () => setClick(!click);
   const handleMouseEnter = (event) => {
@@ -30,10 +29,8 @@ const Navbar = () => {
 
   const handleClose = () => {
     setAnchorEl(null);
-    showMenu()
+    showMenu();
   };
-  
-
 
   useEffect(() => {
     const changeColor = () => setColor(window.scrollY >= 1);
@@ -53,13 +50,13 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-
-
- 
   const services = [
-    { name: "Web Development", path: "/services/web-development" },
-    { name: "Corporate/Individual training", path: "/services/software-solutions" },
-    { name: "Digital Brand Expansion ", path: "/services/ui-ux-design" },
+    { name: "Software Development", path: "/services/software-development" },
+    {
+      name: "Corporate/Individual training",
+      path: "/services/software-solutions",
+    },
+    { name: "Digital Brand Expansion ", path: "/services/digital-brand-expansion" },
     { name: "IT Consultation", path: "/services/it-consultation" },
   ];
 
@@ -73,11 +70,21 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center w-[80%] m-auto">
         <Link href="/">
-        {isMobile ? (
-        <Image src="/logo-no-background.png" width={120} height={200} alt="Mobile Logo" />
-      ) : (
-        <Image src="/logo-no-background.png" width={150} height={300} alt="Desktop Logo" />
-      )}
+          {isMobile ? (
+            <Image
+              src="/logo-no-background.png"
+              width={120}
+              height={200}
+              alt="Mobile Logo"
+            />
+          ) : (
+            <Image
+              src="/logo-no-background.png"
+              width={150}
+              height={300}
+              alt="Desktop Logo"
+            />
+          )}
         </Link>
 
         <ul className={click ? "nav-links active" : "nav-links"}>
@@ -87,78 +94,86 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/About" onClick={showMenu}>
+            <Link href="/about" onClick={showMenu}>
               About
             </Link>
           </li>
           <li>
-            <Link href="/OurWorks" onClick={showMenu}>
+            <Link href="/ourworks" onClick={showMenu}>
               Our Works
             </Link>
           </li>
           <li className="relative">
-      <span
-        className="flex items-center gap-2 cursor-pointer text-sm mt-[3px]"
-        onMouseEnter={handleMouseEnter}
-        onClick={handleClick} // Handle click on mobile
-      >
-        Services
-        {isMenuOpen ? (
-          <FaChevronUp size={10} className="transition-transform duration-300" />
-        ) : (
-          <FaChevronDown size={10} className="transition-transform duration-300" />
-        )}
-      </span>
+            <span
+              className="flex items-center gap-2 cursor-pointer text-sm mt-[3px]"
+              onMouseEnter={handleMouseEnter}
+              onClick={handleClick} // Handle click on mobile
+            >
+              Services
+              {isMenuOpen ? (
+                <FaChevronUp
+                  size={10}
+                  className="transition-transform duration-300"
+                />
+              ) : (
+                <FaChevronDown
+                  size={10}
+                  className="transition-transform duration-300"
+                />
+              )}
+            </span>
 
-      <Menu
-        anchorEl={anchorEl}
-        open={isMenuOpen}
-        onClose={handleClose}
-        MenuListProps={{
-          onMouseLeave: !isMobile ? handleClose : undefined, // Only close on hover for desktop
-        }}
-        sx={{
-          "& .MuiPaper-root": {
-            backgroundColor: "white",
-            boxShadow: "0px 4px 10px rgba(0,0,0,0.1)",
-          },
-        }}
-      >
-        {services.map((service) => (
-          <MenuItem
-            key={service.name}
-            component={Link}
-            
-            href={service.path}
-            onClick={handleClose}
-            sx={{
-              fontSize: "14px",
-              marginTop: "8px",
-              fontWeight: "bold",
-              padding: "10px 20px",
-              color: "black",
-              transition: "all 0.3s ease-in-out",
-              "&:hover": {
-                background : "none",
-                color: "#4B0082",
-              },
-            }}
-          >
-            {service.name}
-          </MenuItem>
-        ))}
-      </Menu>
-    </li>
+            <Menu
+              anchorEl={anchorEl}
+              open={isMenuOpen}
+              onClose={handleClose}
+              MenuListProps={{
+                onMouseLeave: !isMobile ? handleClose : undefined, // Only close on hover for desktop
+              }}
+              sx={{
+                "& .MuiPaper-root": {
+                  backgroundColor: "white",
+                  boxShadow: "0px 4px 10px rgba(0,0,0,0.1)",
+                },
+              }}
+            >
+              {services.map((service) => (
+                <MenuItem
+                  key={service.name}
+                  component={Link}
+                  href={service.path}
+                  onClick={handleClose}
+                  sx={{
+                    fontSize: "14px",
+                    marginTop: "8px",
+                    fontWeight: "bold",
+                    padding: "10px 20px",
+                    color: "black",
+                    transition: "all 0.3s ease-in-out",
+                    "&:hover": {
+                      background: "none",
+                      color: "#4B0082",
+                    },
+                  }}
+                >
+                  {service.name}
+                </MenuItem>
+              ))}
+            </Menu>
+          </li>
           <li>
-            <Link href="/Contact" onClick={showMenu}>
+            <Link href="/contact" onClick={showMenu}>
               Contact Us
             </Link>
           </li>
         </ul>
 
-        <Button variant="contained" className="!hidden lg:!flex !bg-primary !px-4 !py-3 !text-sm  btn">
-  Get a Quote
-</Button>
+        <Button
+          variant="contained"
+          className="!hidden lg:!flex !bg-primary !px-4 !py-3 !text-sm  btn"
+        >
+          Get a Quote
+        </Button>
 
         <div className="hamburger" onClick={showMenu}>
           {click ? (

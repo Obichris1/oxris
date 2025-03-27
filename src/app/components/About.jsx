@@ -21,13 +21,13 @@ const AboutUs = () => {
               <Typography variant="h4" fontWeight="bold" className='text-center !text-2xl md:!text-3xl !mb-6'>
                 About Us
               </Typography>
-              <Typography variant="body1"  className='mb-6 text-gray-500 text-sm md:text-base'> {/* Increased mb */}
+              <Typography variant="body1"  className='!mb-6 text-gray-500 text-sm md:text-base !leading-7'> {/* Increased mb */}
                  <span className='text-primary'>Oxris Solutions</span> specializes in crafting cutting-edge digital solutions, including
                 website and app development, personalized software training, and UI/UX design.
                 Our mission is to empower businesses with innovative and user-friendly technology.
               </Typography>
 
-              <Typography variant="body1" className='mb-6 text-gray-500 text-sm md:text-base'> {/* Increased mb */}
+              <Typography variant="body1" className='!mb-6 text-gray-500 text-sm md:text-base !leading-7'> {/* Increased mb */}
               We deliver premium website design and redesign services, mobile app development, corporate branding, eCommerce solutions, interactive multimedia experiences, graphic and motion design,
                professional training, and reliable hosting and maintenance solutions for businesses of all scales.
                 

@@ -14,7 +14,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    name: "Rev. Oluwafemi Omotosho",
+    name: "Baptist Model High Schools",
     title: "Director of Education, Baptist Model group of Schools",
     feedback:
       "Through their patnership with Techbase consult, The software training provided by Oxris Solution was a transformative experience for our students. The program was well-structured, engaging, and tailored to suit the learning pace of our junior and senior secondary school students. From basic coding principles to hands-on projects, our students gained invaluable knowledge in programming and software development.   This training has sparked a newfound interest in tech among our students, and we look forward to more collaborations in the future!",

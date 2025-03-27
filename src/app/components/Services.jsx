@@ -2,33 +2,33 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
-import { FaLaptopCode, FaPaintBrush, FaDatabase, FaUsers, FaArrowRight } from "react-icons/fa";
+import { FaLaptopCode, FaChalkboardTeacher, FaChartLine, FaUsers, FaArrowRight } from "react-icons/fa";
 import { Typography, Button } from "@mui/material";
 
 const services = [
   {
-    icon: <FaLaptopCode className="text-4xl text-primary" />,
-    title: "Website Development",
+    icon: <FaLaptopCode className="text-2xl text-primary" />,
+    title: "Software Development",
     description:
-      "We build scalable websites tailored to your business needs.",
+      "We build scalable, custom websites and mobile apps tailored to your business needs.",
     link: "/services/web-development",
   },
   {
-    icon: <FaPaintBrush className="text-4xl text-primary" />,
-    title: "Corporate/Individual trainings",
+    icon: <FaChalkboardTeacher className="text-2xl text-primary" />,
+    title: "Corporate/Individual Training",
     description:
-      "Our training program offers mordern tech skills training and side-to-side mentorship ",
-    link: "/services/ui-ux-design",
+      "Our training program offers mordern tech skills training and mentorship ",
+    link: "/services/it-training",
   },
   {
-    icon: <FaDatabase className="text-4xl text-primary" />,
+    icon: <FaChartLine className="text-2xl text-primary" />,
     title: "Digital Brand Expansion",
     description:
-      "Our DBE program gives your business a complete online presence.  ",
-    link: "/services/software-solutions",
+      "Our custom DBE service gives your business a complete online presence.  ",
+    link: "/services/digital-brand-expansion",
   },
   {
-    icon: <FaUsers className="text-4xl text-primary" />,
+    icon: <FaUsers className="text-2xl text-primary" />,
     title: "IT Consultation Services",
     description:
       "We offer expert advice customized to fit your unique business needs.",
@@ -64,7 +64,7 @@ const Services = () => {
   return (
     <section ref={sectionRef} className="w-[90%] md:w-[80%] mx-auto  ">
       <div className=" text-center">
-        <Typography variant="h2" className="text-black !font-bold !mb-8 !text-xl md:!text-3xl ">
+        <Typography variant="h2" className="text-black !font-bold !mb-8 !text-xl md:!text-2xl ">
           OUR SERVICES
         </Typography>
 
@@ -80,7 +80,7 @@ const Services = () => {
               <h3 className="text-[16px] md:text-lg font-bold mt-4 text-black">
                 {service.title}
               </h3>
-              <p className="text-gray-600 mt-2 text-sm md:text-[16px]">{service.description}</p>
+              <p className="text-gray-600 mt-2 text-sm md:text-base leading-7">{service.description}</p>
 
               {/* Read More Button */}
               <Link href={service.link} passHref>
