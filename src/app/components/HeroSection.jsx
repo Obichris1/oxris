@@ -59,7 +59,7 @@ const HeroSection = () => {
 
     <Button
       variant="outlined"
-      className="!bg-transparent !text-white  !px-4 !py-3 !border-black hover:!bg-white hover:!text-primary hover:border-none "
+      className="!bg-transparent !text-white  !px-4 !py-3 !border-black hover:!bg-white hover:!text-primary !hover:border-none "
     >
       Explore Services
     </Button>
