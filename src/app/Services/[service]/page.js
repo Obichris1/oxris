@@ -48,7 +48,7 @@ const ServiceDetail = () => {
       <nav className="w-full md:w-[25%]  p-4 rounded-lg shadow-md bg-white">
         <Typography
           variant="h6"
-          className="font-bold mb-4 uppercase text-center text-lg"
+          className="!font-bold !mb-4 uppercase !text-center !text-lg"
         >
           Services
         </Typography>
@@ -83,7 +83,7 @@ const ServiceDetail = () => {
         >
           <Typography
             variant="h4"
-            className="font-bold mb-4 !text-2xl md:!text-3xl text-center"
+            className="!font-bold !mb-4 !text-2xl md:!text-3xl !text-center"
           >
             {data.title}
           </Typography>
