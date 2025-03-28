@@ -14,10 +14,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Oxris Solutions | Web & App Development",
-  description: "We provide high-quality web and mobile app development services.",
-  keywords: ["web development", "software solutions", "Oxris Solutions"],
-  robots: "index, follow",
+  title: "Oxris Solutions | Web & App Development in Nigeria",
+  description:
+    "Oxris Solutions offers high-quality web and app development, branding, and IT solutions for businesses in Nigeria. Elevate your digital presence today!",
+  keywords: "web development, app development, branding, IT solutions, Nigeria",
+  openGraph: {
+    title: "Oxris Solutions | Web & App Development in Nigeria",
+    description:
+      "We build stunning, high-performance websites and mobile applications for businesses in Nigeria.",
+    url: "https://oxrissolutions.com",
+    siteName: "Oxris Solutions",
+    images: [
+      {
+        url: "https://oxrissolutions.com/og-image.jpg", // Replace with your actual image URL
+        width: 1200,
+        height: 630,
+        alt: "Oxris Solutions - Web & App Development",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
