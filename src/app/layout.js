@@ -26,7 +26,7 @@ export const metadata = {
     siteName: "Oxris Solutions",
     images: [
       {
-        url: "https://oxrissolutions.com/og-image.jpg", // Replace with your actual image URL
+        url: "https://oxrissolutions.com/logo-no-background.png", // Replace with your actual image URL
         width: 1200,
         height: 630,
         alt: "Oxris Solutions - Web & App Development",
