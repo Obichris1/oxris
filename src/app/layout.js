@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import WhatsAppIcon from "./components/WhatsappIcon";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,7 +43,7 @@ export default function RootLayout({ children }) {
 
 <head>
         {/* Favicon */}
-        <link rel="icon" href="/logo-no-background.png" sizes="any" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
 
         {/* Canonical URL */}
         <link rel="canonical" href="https://oxrissolutions.com" />
@@ -74,7 +75,7 @@ export default function RootLayout({ children }) {
         <Navbar />
 
         <div className="">{children}</div>
-
+        <WhatsAppIcon />
         <Footer />
       </body>
     </html>

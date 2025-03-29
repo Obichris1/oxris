@@ -80,7 +80,7 @@ const AboutUs = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <Typography variant="h4" fontWeight="bold" className="text-gray-200 !text-2xl md:!text-3xl !mb-6">
-              Positioned to deliver on your needs.
+            Equipped to meet your requirements..
             </Typography>
           </motion.div>
 
@@ -89,10 +89,8 @@ const AboutUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <Typography variant="body1" className="!text-gray-300 !text-sm md:!text-base  !w-[85%] md:w-[65%] !mx-auto !mb-6 max-w-5xl"> {/* Increased mb */}
-              We constantly strive to bring market-leading products and solutions that meet specific business needs.
-              Our team is highly experienced in identifying market trends, defining solutions, and delivering
-              high-performing systems based on SAAS and enterprise licensing models.
+            <Typography variant="body1" className="!text-gray-300 !text-sm md:!text-base  !w-[80%] md:w-[65%] !mx-auto !mb-6 max-w-5xl"> {/* Increased mb */}
+            We are committed to providing industry-leading products and solutions tailored to specific business needs. Our expert team excels in identifying market trends, developing effective solutions, and delivering high-performance systems.
             </Typography>
           </motion.div>
 
@@ -101,7 +99,7 @@ const AboutUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <Typography variant="body1" className="!text-gray-300 !w-[85%] !text-sm md:!text-base !md:w-[65%] !mx-auto">
+            <Typography variant="body1" className="!text-gray-300 !w-[75%] !text-sm md:!text-base !md:w-[65%] !mx-auto">
               At Oxris Solutions, we believe that every business challenge is unique and requires a tailored approach.
               By collaborating closely with our clients, we combine industrial expertise with technical innovation
               to create solutions that drive success.

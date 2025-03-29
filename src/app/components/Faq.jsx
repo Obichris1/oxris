@@ -10,7 +10,7 @@ const faqs = [
   { question: 'Can I get a free quote for my project?', answer: 'Yes, our project and business development quotes are free!' },
   { question: 'Are there installmental payment plans?', answer: 'Absolutely! We offer very flexible and budget-friendly payment plans.' },
   { question: 'Can you develop a custom software solution for my business?', answer: 'Absolutely! We specialize in custom software solutions tailored to your needs.' },
-  { question: 'Do you offer one-on-one private trainings?', answer: 'Yes, we offer training to individuals, corporate organizations, and private schools, both physically and online.' }
+  { question: 'Do you offer private trainings?', answer: 'Yes, we offer training to individuals, corporate organizations, and private schools, both physically and online.' }
 ];
 
 export default function FAQSection() {
@@ -64,10 +64,10 @@ export default function FAQSection() {
           >
             <Accordion className="shadow-md rounded-xl">
               <AccordionSummary expandIcon={<ExpandMoreIcon className="" />}>
-                <Typography className="font-semibold text-black text-sm">{faq.question}</Typography>
+                <Typography className="font-semibold text-black !text-sm md:!text-base">{faq.question}</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className="text-gray-500 !text-xs md:text-sm ">{faq.answer}</Typography>
+                <Typography className="text-gray-500 !text-xs md:!text-sm ">{faq.answer}</Typography>
               </AccordionDetails>
             </Accordion>
           </motion.div>

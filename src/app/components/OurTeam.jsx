@@ -56,7 +56,7 @@ const Team = () => {
         <Typography className="!text-2xl md:!text-3xl !font-bold !mb-4 !text-black">
           Meet Our Team
         </Typography>
-        <Typography className="md:text-base text-sm text-gray-400 leading-relaxed !mb-10">
+        <Typography className="md:!text-base !text-sm !text-gray-500 leading-relaxed !mb-10">
           Our team consists of passionate and highly skilled professionals
           dedicated to delivering the best IT solutions.
         </Typography>

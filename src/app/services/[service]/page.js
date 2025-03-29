@@ -61,7 +61,7 @@ const ServiceDetail = () => {
             <li key={key}>
               <Link
                 href={`/services/${key}`}
-                className={`block px-3 py-2 rounded-lg font-medium transition duration-300 ${
+                className={`block px-3 py-2 rounded-lg font- transition duration-300 ${
                   serviceKey === key ? "bg-purple-600 text-white" : ""
                 }`}
               >
