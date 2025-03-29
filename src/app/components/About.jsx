@@ -10,7 +10,7 @@ const AboutUs = () => {
   return (
     <div id="about" className="w-full m-auto ">
 
-      <div className='w-[80%] m-auto '>
+      <div className='w-[90%] md:w-[80%] m-auto '>
         <Grid container spacing={6} alignItems="center"> {/* Increased spacing */}
           {/* Text Section */}
           <Grid item xs={12} md={6}>
@@ -101,7 +101,7 @@ const AboutUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <Typography variant="body1" className="!text-gray-300 w-[85%] !text-sm md:!text-base md:w-[65%] !mx-auto">
+            <Typography variant="body1" className="!text-gray-300 !w-[85%] !text-sm md:!text-base !md:w-[65%] !mx-auto">
               At Oxris Solutions, we believe that every business challenge is unique and requires a tailored approach.
               By collaborating closely with our clients, we combine industrial expertise with technical innovation
               to create solutions that drive success.

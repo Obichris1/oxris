@@ -87,7 +87,7 @@ const Services = () => {
                 <Button
                   variant="text"
                   endIcon={<FaArrowRight className="!text-primary " />}
-                  className="!text-sm text-gray-400 mt-4 hover:underline"
+                  className="!text-sm !text-gray-400 mt-4 hover:underline"
                 >
                   Read More
                 </Button>
