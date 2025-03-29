@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
 
 <head>
         {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/logo-no-background.png" sizes="any" />
 
         {/* Canonical URL */}
         <link rel="canonical" href="https://oxrissolutions.com" />

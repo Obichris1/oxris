@@ -7,27 +7,27 @@ import { FiPhone } from 'react-icons/fi';
 const projects = [
   {
     title: 'E-Commerce Website',
-    description: 'A modern and responsive e-commerce platform for fashion brands.',
-    image: '/Assets/EsoE.png',
-    url: 'https://ecommerce.example.com', // Replace with actual live URL
+    description: 'A self service web application for Eso-E microfinance bank  ',
+    image: '/Assets/EsoE2.png',
+    url: 'https://ibank.esoebank.com/', // Replace with actual live URL
   },
   {
     title: 'Real Estate Platform',
-    description: 'A sleek real estate listing platform with interactive maps.nssnsnsn',
-    image: '/Assets/Dsquare.png',
-    url: 'https://realestate.example.com', // Replace with actual live URL
+    description: 'An event center website for Dsquare Nigeria ',
+    image: '/Assets/Dsquare2.png',
+    url: 'https://dsquare-events.vercel.app/', // Replace with actual live URL
   },
   {
     title: 'SaaS Dashboard',
-    description: 'A fully-featured SaaS dashboard with analytics and reports.',
-    image: '/Assets/ShoesHive.png',
-    url: 'https://saasdashboard.example.com', // Replace with actual live URL
+    description: 'A fully-featured e-commerce app for shoes hive.',
+    image: '/Assets/ShoesHive2.png',
+    url: 'https://shoes-hive.vercel.app/', // Replace with actual live URL
   },
   {
     title: 'Portfolio Website',
-    description: 'A personal portfolio website showcasing projects and skills.',
-    image: '/Assets/Shred app.png',
-    url: 'https://portfolio.example.com', // Replace with actual live URL
+    description: 'A fitness application for Shred Nigeria that details a workout plan for users  .',
+    image: '/Assets/Shred.png',
+    url: '', // Replace with actual live URL
   },
 ];
 
@@ -39,10 +39,18 @@ const OurWorks = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-2xl md:text-4xl font-bold text-black text-center mb-10"
+          className="text-2xl md:text-3xl font-bold text-black text-center mb-3 "
         >
           Our Works
         </motion.h2>
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-gray-400 text-center text-sm md:text-base mb-10 "
+        >
+          Checkout some projects we have completed.
+          </motion.h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (

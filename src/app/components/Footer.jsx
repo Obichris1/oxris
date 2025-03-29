@@ -84,7 +84,7 @@ const Footer = () => {
             Contact Info
           </Typography>
           <Link href="tel:+2348129614462" className="hover:text-primary text-gray-500  transition !text-xs md:!text-sm">+234 812 961 4462</Link>
-          <Link href="mailto:support@dxristech.com" className="hover:text-primary text-gray-500  transition !text-xs md:!text-sm">support@oxrissolutions.com</Link>
+          <Link href="mailto:obichris202@gmail.com" className="hover:text-primary text-gray-500  transition !text-xs md:!text-sm">obichris202@gmail.com</Link>
           <Typography className=" text-gray-500 !text-xs md:!text-sm">Lagos, Nigeria.</Typography>
         </div>
       </div>

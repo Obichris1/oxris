@@ -56,7 +56,7 @@ const HeroSection = () => {
             >
               Get a quote
             </Button>
-            <Link href="/contact" passHref>
+            <Link href="/services/software-development" passHref>
               <Button
                 variant="outlined"
                 className="!bg-transparent !text-white  !px-4 !py-3 !border-black hover:!bg-white hover:!text-primary !font-semibold !hover:border-none "

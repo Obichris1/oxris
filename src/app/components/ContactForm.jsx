@@ -117,6 +117,8 @@ export default function ContactForm() {
             }}
           />
 
+          
+
           {/* Dropdown Field */}
           <TextField
             label="How did you hear about us?"
@@ -138,6 +140,19 @@ export default function ContactForm() {
             <MenuItem value="From a Friend">From a Friend</MenuItem>
             <MenuItem value="Other">Other</MenuItem>
           </TextField>
+
+          <TextField
+            type="text"
+            name="message"
+            required
+            multiline
+            rows={4}
+            value={formData.message}
+            onChange={handleChange}
+            aria-label="maximum height"
+            // margin="normal"
+            label="Tell us about your project"
+          />
         </div>
 
         {/* Submit Button */}

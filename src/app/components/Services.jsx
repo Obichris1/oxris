@@ -10,7 +10,7 @@ const services = [
     icon: <FaLaptopCode className="text-2xl text-primary" />,
     title: "Software Development",
     description:
-      "We build scalable, custom websites and mobile apps tailored to your business needs.",
+      "We build scalable,  custom websites and mobile apps tailored to your business requirements.",
     link: "/services/web-development",
   },
   {
@@ -80,14 +80,14 @@ const Services = () => {
               <h3 className="text-[16px] md:text-lg font-bold mt-4 text-black">
                 {service.title}
               </h3>
-              <p className="text-gray-600 mt-2 text-sm md:text-base leading-7">{service.description}</p>
+              <p className="text-gray-400 mt-2 text-sm md:text-base leading-7">{service.description}</p>
 
               {/* Read More Button */}
               <Link href={service.link} passHref>
                 <Button
                   variant="text"
-                  endIcon={<FaArrowRight />}
-                  className="!text-gray-500 !text-sm mt-4 hover:underline"
+                  endIcon={<FaArrowRight className="!text-primary " />}
+                  className="!text-sm text-gray-400 mt-4 hover:underline"
                 >
                   Read More
                 </Button>
