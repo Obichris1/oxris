@@ -4,6 +4,7 @@ import { Box, Button, Typography, Grid } from '@mui/material';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaArrowRight, FaPhone } from "react-icons/fa";
 
 const AboutUs = () => {
   return (
@@ -22,7 +23,7 @@ const AboutUs = () => {
                 About Us
               </Typography>
               <Typography variant="body1"  className='!mb-6 text-gray-500 text-sm md:text-base !leading-7'> {/* Increased mb */}
-                 <span className='text-primary'>Oxris Solutions</span> specializes in crafting cutting-edge digital solutions, including
+                 <span className='!text-primary !font-semibold'>Oxris Solutions</span> specializes in crafting cutting-edge digital solutions, including
                 website and app development, personalized software training, and UI/UX design.
                 Our mission is to empower businesses with innovative and user-friendly technology.
               </Typography>
@@ -33,8 +34,8 @@ const AboutUs = () => {
                 
               </Typography>
 
-              <Link href="#services" passHref>
-                <Button variant="contained" className="!hidden lg:!flex !bg-primary !px-4 !py-3 !text-sm !mt-12  btn">
+              <Link href="/services/software-development" passHref>
+                <Button variant="contained"  endIcon={<FaArrowRight />} className="!hidden lg:!flex !bg-primary !px-4 !py-3 !text-sm !mt-12 !font-semibold  btn">
                   Explore Our Services
                 </Button>
               </Link>
@@ -49,7 +50,7 @@ const AboutUs = () => {
               transition={{ duration: 0.8 }}
             >
               <Image
-                src="/tech7.webp" // Replace with actual image path
+                src="/about-image.png" // Replace with actual image path
                 alt="About Us"
                 width={500}
                 height={350}

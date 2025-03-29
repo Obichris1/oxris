@@ -64,7 +64,7 @@ const Services = () => {
   return (
     <section ref={sectionRef} className="w-[90%] md:w-[80%] mx-auto  ">
       <div className=" text-center">
-        <Typography variant="h2" className="text-black !font-bold !mb-8 !text-xl md:!text-2xl ">
+        <Typography variant="h2" className="text-black !font-bold !mb-8 !text-2xl md:!text-3xl ">
           OUR SERVICES
         </Typography>
 

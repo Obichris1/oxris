@@ -39,7 +39,7 @@ export default function FAQSection() {
   }, []);
 
   return (
-    <div className="w-[85%] md:w-[80%] lg:w-[80%] self-start mx-auto" ref={ref}>
+    <div id='faq' className="w-[85%] md:w-[80%] lg:w-[80%] self-start mx-auto" ref={ref}>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}

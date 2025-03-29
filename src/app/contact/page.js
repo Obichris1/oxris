@@ -52,7 +52,7 @@ const Page = () => {
 
 
 <Link
-  href="https://www.instagram.com/dsquarevents/"
+  href=""
   target="_blank"
   className="p-3 bg-[#E12F6C] rounded-full text-white hover:scale-75 transition"
 >
@@ -60,7 +60,7 @@ const Page = () => {
 </Link>
 
 <Link
-  href="https://www.facebook.com/profile.php?id=100090758267591&mibextid=ZbWKwL"
+  href=""
   target="_blank"
   className="p-3 bg-[#3C5997] rounded-full text-white hover:scale-75 transition"
 >
@@ -68,7 +68,7 @@ const Page = () => {
 </Link>
 
 <Link
-  href="https://x.com/DEventcent23511"
+  href=""
   target="_blank"
   className="p-3 bg-[#000] rounded-full text-white hover:scale-75 transition"
 >

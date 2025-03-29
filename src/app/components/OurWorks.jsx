@@ -80,20 +80,20 @@ const OurWorks = () => {
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="bg-black rounded-2xl p-8 w-full max-w-4xl text-white text-center shadow-xl"
         >
-          <h2 className="text-3xl md:text-4xl font-bold flex items-center justify-center gap-2">
+          <h2 className="text-2xl md:text-3xl font-bold flex items-center justify-center gap-2">
             Got a Project? Tell us about it! <span className="wave">👋</span>
           </h2>
           <div className="flex justify-center items-center mt-6 space-x-4 text-lg">
             <FiPhone className="text-2xl text-gray-300" />
             <a
-              href="tel:+15155065404"
+              href="tel:+2348129614462"
               className="underline hover:text-primary transition-colors duration-300"
             >
               +234 8129614462
             </a>
             <span className="text-gray-400">|</span>
             <a
-              href="tel:+2347061618972"
+              href="tel:+2349150831932"
               className="underline hover:text-primary transition-colors duration-300"
             >
               +234 9150831932

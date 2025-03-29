@@ -54,7 +54,7 @@ const Navbar = () => {
     { name: "Software Development", path: "/services/software-development" },
     {
       name: "Corporate/Individual training",
-      path: "/services/software-solutions",
+      path: "/services/it-training",
     },
     { name: "Digital Brand Expansion ", path: "/services/digital-brand-expansion" },
     { name: "IT Consultation", path: "/services/it-consultation" },
@@ -167,14 +167,14 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-
+        <Link href="/contact" passHref>
         <Button
           variant="contained"
-          className="!hidden lg:!flex !bg-primary !px-4 !py-3 !text-sm  btn"
+          className="!hidden lg:!flex !bg-primary !px-4 !py-3 !text-sm !font-semibold  btn"
         >
           Get a Quote
         </Button>
-
+        </Link>
         <div className="hamburger" onClick={showMenu}>
           {click ? (
             <FaTimes size={20} style={{ color: "#333" }} />
