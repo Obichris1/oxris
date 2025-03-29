@@ -18,7 +18,7 @@ const serviceDetails = {
   "it-training": {
     title: "Corporate/Individual trainings",
     description:
-      "we offer comprehensive corporate and individual training programs designed to empower professionals, businesses, and students with in-demand tech skills. Whether you're an organization looking to upskill your team, a school seeking structured IT training, or an individual eager to advance your career, our expert-led programs are tailored to meet your needs.",
+      "We offer comprehensive corporate and individual training programs designed to empower professionals, businesses, and students with in-demand tech skills. Whether you're an organization looking to upskill your team, a school seeking structured IT training, or an individual eager to advance your career, our expert-led programs are tailored to meet your needs.",
     description2:
       "Our training services cover corporate IT training, online courses, and one-on-one coaching, ensuring flexibility and personalized learning experiences. With a hands-on approach, industry-relevant curriculum, and experienced instructors, we ensure that every learner gains the expertise needed to thrive in today's digital world. ",
     image: "/tech14.webp",
@@ -49,7 +49,7 @@ const ServiceDetail = () => {
   return (
     <div className="flex flex-col md:flex-row w-full  mx-auto p-6 ">
       {/* Side Navigation */}
-      <nav className="w-full md:w-[25%]  p-4 rounded-lg shadow-md bg-white">
+      <nav className="w-full md:w-[25%] mb-10  md:mb-0  p-4 rounded-lg shadow-md bg-white">
         <Typography
           variant="h6"
           className="!font-bold !mb-4 uppercase !text-center !text-lg"
@@ -77,7 +77,7 @@ const ServiceDetail = () => {
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
-        className="w-full md:w-full p-6 rounded-lg  flex flex-col items-center gap-8"
+        className="w-[90%] md:w-full   rounded-lg  flex flex-col items-center gap-8"
       >
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -93,7 +93,7 @@ const ServiceDetail = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="text-gray-400 text-sm md:text-base !leading-7"
+            className="text-gray-500 text-sm md:text-base !leading-7"
           >
             {data.description}
           </Typography>
@@ -114,7 +114,7 @@ const ServiceDetail = () => {
 
           <Typography
             variant="body1"
-            className="!mt-10 text-gray-400 text-sm md:text-base !leading-7"
+            className="!mt-10 text-gray-500 text-sm md:text-base !leading-7"
           >
             {data.description2}
           </Typography>

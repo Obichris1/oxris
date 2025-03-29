@@ -151,7 +151,7 @@ export default function ContactForm() {
             onChange={handleChange}
             aria-label="maximum height"
             // margin="normal"
-            label="Tell us about your project"
+            label="Leave us a message"
           />
         </div>
 
@@ -171,10 +171,10 @@ export default function ContactForm() {
       </form>
 
       {success && (
-        <div className="bg-green-200 p-4 my-10 rounded-xl flex justify-center items-center gap-5 w-full md:max-w-6xl m-auto">
-          <AiOutlineCheckCircle className="text-2xl" />
+        <div className="bg-black p-4 my-10 rounded-xl flex justify-center items-center gap-5 w-full md:max-w-6xl m-auto">
+          <AiOutlineCheckCircle className="text-2xl text-primary" />
           <Typography className="text-xs md:text-sm">
-            Thank you for contacting D Square Events Centre! We will be in touch with you shortly.
+            Thank you for contacting us! We will be in touch with you shortly.
           </Typography>
         </div>
       )}
