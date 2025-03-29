@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import WhatsAppIcon from "./components/WhatsappIcon";
+import Head from 'next/head';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,6 +45,7 @@ export default function RootLayout({ children }) {
 <head>
         {/* Favicon */}
         <link rel="icon" type="image/png" href="/favicon.png" />
+        <title>Oxris Solutions | Websites, Mobile Applications, Business Solutions, IT training</title>
 
         {/* Canonical URL */}
         <link rel="canonical" href="https://oxrissolutions.com" />

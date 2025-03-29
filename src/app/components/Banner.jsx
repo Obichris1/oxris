@@ -122,8 +122,7 @@ const Banner = () => {
             className="flex flex-col gap-10 w-full md:w-1/2  opacity-0 "
           >
             <Typography className="!text-gray-300 !text-[14px] md:!text-base !leading-7 ">
-              Oxris solutions, is a Nigerian based IT solutions Company with
-              free website consulting in Lagos.
+              Oxris solutions, is a Nigerian based IT solutions agency 
             </Typography>
 
             <Typography className="!text-gray-300 !text-[14px] md:!text-base !leading-7">
