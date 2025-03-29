@@ -50,12 +50,14 @@ const HeroSection = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1.5, duration: 0.8 }}
           >
+            <Link href="/contact" passHref>
             <Button
               variant="contained"
               className="btn !bg-primary !font-semibold !px-4 !py-3 !text-sm "
             >
               Get a quote
             </Button>
+            </Link>
             <Link href="/services/software-development" passHref>
               <Button
                 variant="outlined"

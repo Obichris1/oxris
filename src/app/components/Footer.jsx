@@ -24,7 +24,7 @@ const Footer = () => {
       </Link>
 
           <div className="max-w-56 ">
-            <Typography className="text-black mt-2 !text-xs md:!text-sm ">
+            <Typography className="!text-gray-500 mt-2 !text-xs md:!text-sm !leading-5 ">
             At Oxris Solutions, We Believe In The Power Of Being Found, Known, And Trusted.
             </Typography>
           </div>

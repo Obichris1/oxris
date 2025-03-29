@@ -39,16 +39,26 @@ const Team = () => {
     gsap.fromTo(
       cardRefs.current,
       { opacity: 0, y: 30, scale: 0.9 },
-      { opacity: 1, y: 0, scale: 1, duration: 1, stagger: 0.3, ease: "power3.out" }
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 1,
+        stagger: 0.3,
+        ease: "power3.out",
+      }
     );
   }, []);
 
   return (
     <section ref={sectionRef} className="w-full py-20 px-6">
       <div className="max-w-6xl mx-auto text-center ">
-        <Typography className="!text-2xl md:!text-3xl !font-bold !mb-4 !text-black">Meet Our Team</Typography>
+        <Typography className="!text-2xl md:!text-3xl !font-bold !mb-4 !text-black">
+          Meet Our Team
+        </Typography>
         <Typography className="md:text-base text-sm text-gray-400 leading-relaxed !mb-10">
-          Our team consists of passionate and highly skilled professionals dedicated to delivering the best IT solutions.
+          Our team consists of passionate and highly skilled professionals
+          dedicated to delivering the best IT solutions.
         </Typography>
 
         {/* Team Cards */}
@@ -67,8 +77,12 @@ const Team = () => {
                 height={400}
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
-                <h3 className="text-xl font-semibold text-white">{member.name}</h3>
-                <p className="text-gray-300">{member.role}</p>
+                <h3 className=" font-semibold text-sm md:text-base text-white">
+                  {member.name}
+                </h3>
+                <p className="text-gray-300 text-sm md:text-base">
+                  {member.role}
+                </p>
               </div>
             </div>
           ))}

@@ -64,10 +64,10 @@ export default function FAQSection() {
           >
             <Accordion className="shadow-md rounded-xl">
               <AccordionSummary expandIcon={<ExpandMoreIcon className="" />}>
-                <Typography className="font-semibold text-gray-800">{faq.question}</Typography>
+                <Typography className="font-semibold text-black text-sm">{faq.question}</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className="text-gray-500">{faq.answer}</Typography>
+                <Typography className="text-gray-500 !text-xs md:text-sm ">{faq.answer}</Typography>
               </AccordionDetails>
             </Accordion>
           </motion.div>

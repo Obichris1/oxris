@@ -77,7 +77,7 @@ const ServiceDetail = () => {
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
-        className="w-[90%] md:w-full   rounded-lg  flex flex-col items-center gap-8"
+        className="w-[90%] md:w-full text-left m-auto   rounded-lg  flex flex-col items-center gap-8"
       >
         <motion.div
           initial={{ opacity: 0, x: -50 }}
