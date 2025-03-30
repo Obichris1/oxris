@@ -43,7 +43,9 @@ const Page = () => {
           </span>
           <span className="flex items-center gap-4 text-gray-500 ">
             <AiOutlinePhone className="text-lg" />
-            <Link href="tel:+2348129614462" className="hover:text-primary">+234 812 961 4462</Link>
+            <Link href="tel:+2348129614462" className="hover:text-primary">+234 812 961 4462</Link>,
+            <Link href="tel:+2349150831932" className="hover:text-primary">+234 915 083 1932</Link>
+           
           </span>
         </div>
 

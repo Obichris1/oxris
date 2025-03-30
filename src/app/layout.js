@@ -19,11 +19,11 @@ export const metadata = {
   title:
     "Oxris Solutions | Websites, Mobile Applications, Business Solutions, IT training ",
   description:
-    "Oxris Solutions offers high-quality website and mobile app development, branding, and IT solutions for businesses in Nigeria. Elevate your digital presence today!",
+    "Oxris Solutions designs high-quality websites and mobile applications, Offer IT consultation and software trainings services for small and large scale businesses. Elevate your digital presence today!",
   keywords:
     "web development, mobile development, training, IT solutions, Lagos",
   openGraph: {
-    title: "Oxris Solutions | Web & App Development in Nigeria",
+    title: "Websites, Mobile Applications, Business Solutions, IT training",
     description:
       "We build stunning, high-performance websites and mobile applications for businesses in Nigeria.",
     url: "https://oxrissolutions.com",
@@ -74,7 +74,7 @@ export default function RootLayout({ children }) {
               url: "https://oxrissolutions.com",
               logo: "https://oxrissolutions.com/logo.png",
               description:
-                "We provide high-quality web and app development, branding, and IT solutions.",
+                "We provide high-quality web and mobile app development.",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Lagos",

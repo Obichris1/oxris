@@ -13,7 +13,7 @@ const projects = [
   },
   {
     title: 'Real Estate Platform',
-    description: 'An event center website for Dsquare Nigeria ',
+    description: 'An event center website for Dsquare events center ',
     image: '/Assets/Dsquare2.png',
     url: 'https://dsquare-events.vercel.app/', // Replace with actual live URL
   },
@@ -47,7 +47,7 @@ const OurWorks = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-gray-400 text-center text-sm md:text-base mb-10 "
+          className="text-gray-500 text-center text-sm md:text-base mb-10 "
         >
           Checkout some projects we have completed.
           </motion.h2>
@@ -73,7 +73,7 @@ const OurWorks = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold">{project.title}</h3>
-                  <p className="text-gray-400 text-xs md:text-sm mt-2">{project.description}</p>
+                  <p className="text-gray-500 text-xs md:text-sm mt-2">{project.description}</p>
                 </div>
               </motion.div>
             </Link>
@@ -99,7 +99,7 @@ const OurWorks = () => {
             >
               +234 8129614462
             </a>
-            <span className="text-gray-400">|</span>
+            <span className="text-gray-500">|</span>
             <a
               href="tel:+2349150831932"
               className="underline hover:text-primary transition-colors duration-300"
