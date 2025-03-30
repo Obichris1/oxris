@@ -65,7 +65,7 @@ const TestimonialSection = () => {
                     <FaStar key={i} size={18} className="text-primary" />
                   ))}
                 </div>
-                <p className="text-gray-700 mt-4 italic text-xs md:text-sm">
+                <p className="text-gray-700 mt-4 italic text-xs md:text-sm !leading-7">
                   "{testimonial.feedback}"
                 </p>
               </CardContent>

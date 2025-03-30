@@ -27,7 +27,7 @@ const projects = [
     title: 'Portfolio Website',
     description: 'A fitness application for Shred Nigeria that details a workout plan for users  .',
     image: '/Assets/Shred.png',
-    url: '', // Replace with actual live URL
+    url: 'https://shredapp.netlify.app/', // Replace with actual live URL
   },
 ];
 
