@@ -22,13 +22,13 @@ const AboutUs = () => {
               <Typography variant="h4" fontWeight="bold" className='text-center !text-2xl md:!text-3xl !mb-6'>
                 About Us
               </Typography>
-              <Typography variant="body1"  className='!mb-6 text-gray-500 text-sm md:text-base !leading-7'> {/* Increased mb */}
+              <Typography variant="body1"  className='!mb-6 text-gray-500 !text-sm !leading-6 md:!text-base md:!leading-7'> {/* Increased mb */}
                  <span className='!text-primary !font-semibold'>Oxris Solutions</span> specializes in crafting cutting-edge digital solutions, including
-                website and app development, personalized software training, and UI/UX design.
+               custom development, personalized software training and IT consultation services.
                 Our mission is to empower businesses with innovative and user-friendly technology.
               </Typography>
 
-              <Typography variant="body1" className='!mb-6 text-gray-500 text-sm md:text-base !leading-7'> {/* Increased mb */}
+              <Typography  variant="body1" className='!mb-6 text-gray-500 !text-sm md:!text-base !leading-6 md:!leading-7'> {/* Increased mb */}
               We deliver premium website design and redesign services, mobile app development, corporate branding, eCommerce solutions, interactive multimedia experiences, graphic and motion design,
                professional training, and reliable hosting and maintenance solutions for businesses of all scales.
                 
@@ -89,7 +89,7 @@ const AboutUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <Typography variant="body1" className="!text-gray-300 !text-sm md:!text-base  !w-[80%] md:w-[65%] !mx-auto !mb-6 max-w-5xl"> {/* Increased mb */}
+            <Typography variant="body1" className="!text-gray-300 !text-sm md:!text-base  !w-[80%] md:w-[65%] !mx-auto !mb-6 max-w-5xl !leading-6 md:!leading-7"> {/* Increased mb */}
             We are committed to providing industry-leading products and solutions tailored to specific business needs. Our expert team excels in identifying market trends, developing effective solutions, and delivering high-performance systems.
             </Typography>
           </motion.div>
@@ -99,7 +99,7 @@ const AboutUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <Typography variant="body1" className="!text-gray-300 !w-[75%] !text-sm md:!text-base !md:w-[65%] !mx-auto">
+            <Typography variant="body1" className="!text-gray-300 !w-[75%] !text-sm md:!text-base !md:w-[65%] !mx-auto !leading-6 md:!leading-7">
               At Oxris Solutions, we believe that every business challenge is unique and requires a tailored approach.
               By collaborating closely with our clients, we combine industrial expertise with technical innovation
               to create solutions that drive success.
