@@ -19,9 +19,9 @@ export const metadata = {
   title:
     "Oxris Solutions | Websites, Mobile Applications, Business Solutions, IT training ",
   description:
-    "Oxris Solutions offers high-quality web and app development, branding, and IT solutions for businesses in Nigeria. Elevate your digital presence today!",
+    "Oxris Solutions offers high-quality website and mobile app development, branding, and IT solutions for businesses in Nigeria. Elevate your digital presence today!",
   keywords:
-    "web development, app development, training,  IT solutions, Nigeria",
+    "web development, mobile development, training, IT solutions, Lagos",
   openGraph: {
     title: "Oxris Solutions | Web & App Development in Nigeria",
     description:
@@ -30,7 +30,7 @@ export const metadata = {
     siteName: "Oxris Solutions",
     images: [
       {
-        url: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", // Replace with your actual image URL
+        url: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
         width: 1200,
         height: 630,
         alt: "Oxris Solutions - Web & App Development",
@@ -43,14 +43,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
+      <Head>
+      <meta name="google-site-verification" content="-SFmo72WliMp02RXwDBy9rYI4ImejFx3eRkyM_hHyZ8" />
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <title>
-          Oxris Solutions | Websites, Mobile Applications, Business Solutions,
-          IT training
-        </title>
-
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords} />
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        <meta property="og:site_name" content={metadata.openGraph.siteName} />
+        <meta property="og:type" content={metadata.openGraph.type} />
+        <meta property="og:image" content={metadata.openGraph.images[0].url} />
+        <meta property="og:image:width" content={metadata.openGraph.images[0].width} />
+        <meta property="og:image:height" content={metadata.openGraph.images[0].height} />
+        <meta property="og:image:alt" content={metadata.openGraph.images[0].alt} />
+        
         {/* Canonical URL */}
         <link rel="canonical" href="https://oxrissolutions.com" />
 
@@ -74,12 +83,10 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      </Head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <meta name="google-site-verification" content="-SFmo72WliMp02RXwDBy9rYI4ImejFx3eRkyM_hHyZ8" />
         <Navbar />
-
         <div className="">{children}</div>
         <WhatsAppIcon />
         <Footer />
