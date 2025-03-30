@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import WhatsAppIcon from "./components/WhatsappIcon";
-import Head from 'next/head';
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,10 +16,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Oxris Solutions | Websites, Mobile Applications, Business Solutions, IT training ",
+  title:
+    "Oxris Solutions | Websites, Mobile Applications, Business Solutions, IT training ",
   description:
     "Oxris Solutions offers high-quality web and app development, branding, and IT solutions for businesses in Nigeria. Elevate your digital presence today!",
-  keywords: "web development, app development, training,  IT solutions, Nigeria",
+  keywords:
+    "web development, app development, training,  IT solutions, Nigeria",
   openGraph: {
     title: "Oxris Solutions | Web & App Development in Nigeria",
     description:
@@ -41,11 +43,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-
-<head>
+      <head>
         {/* Favicon */}
-        <link rel="icon" type="image/png" href="/favicon.png" />
-        <title>Oxris Solutions | Websites, Mobile Applications, Business Solutions, IT training</title>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <title>
+          Oxris Solutions | Websites, Mobile Applications, Business Solutions,
+          IT training
+        </title>
 
         {/* Canonical URL */}
         <link rel="canonical" href="https://oxrissolutions.com" />
@@ -57,15 +61,15 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "name": "Oxris Solutions",
-              "url": "https://oxrissolutions.com",
-              "logo": "https://oxrissolutions.com/logo.png",
-              "description":
+              name: "Oxris Solutions",
+              url: "https://oxrissolutions.com",
+              logo: "https://oxrissolutions.com/logo.png",
+              description:
                 "We provide high-quality web and app development, branding, and IT solutions.",
-              "address": {
+              address: {
                 "@type": "PostalAddress",
-                "addressLocality": "Lagos",
-                "addressCountry": "Nigeria",
+                addressLocality: "Lagos",
+                addressCountry: "Nigeria",
               },
             }),
           }}
