@@ -93,7 +93,7 @@ const ServiceDetail = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="text-gray-500 text-sm md:text-base !leading-7"
+            className="text-gray-500 text-sm md:text-base leading-6 md:!leading-7"
           >
             {data.description}
           </Typography>
@@ -114,7 +114,7 @@ const ServiceDetail = () => {
 
           <Typography
             variant="body1"
-            className="!mt-10 text-gray-500 text-sm md:text-base !leading-7"
+            className="!mt-10 text-gray-500 text-sm md:text-base leading-6 md:!leading-7"
           >
             {data.description2}
           </Typography>
