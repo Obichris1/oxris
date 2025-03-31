@@ -10,7 +10,7 @@ const faqs = [
   { question: 'Can I get a free quote for my project?', answer: 'Yes, our project and business development quotes are free!' },
   { question: 'Are there installmental payment plans?', answer: 'Absolutely! We offer very flexible and budget-friendly payment plans.' },
   { question: 'Can you develop a custom software solution for my business?', answer: 'Absolutely! We specialize in custom software solutions tailored to your needs.' },
-  { question: 'Do you offer private trainings?', answer: 'Yes, we offer training to individuals, corporate organizations, and private schools, both physically and online.' }
+  { question: 'Do you offer private trainings?', answer: 'Yes, we offer online training to individuals, corporate organizations, and private schools.' }
 ];
 
 export default function FAQSection() {

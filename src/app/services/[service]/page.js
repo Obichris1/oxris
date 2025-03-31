@@ -16,7 +16,7 @@ const serviceDetails = {
     image: "/tech16.webp",
   },
   "it-training": {
-    title: "Corporate/Individual trainings",
+    title: "Corporate/Individual training",
     description:
       "We offer comprehensive corporate and individual training programs designed to empower professionals, businesses, and students with in-demand tech skills. Whether you're an organization looking to upskill your team, a school seeking structured IT training, or an individual eager to advance your career, our expert-led programs are tailored to meet your needs.",
     description2:
@@ -114,7 +114,7 @@ const ServiceDetail = () => {
 
           <Typography
             variant="body1"
-            className="!mt-10 text-gray-500 text-sm md:text-base !leading-6 md:!leading-7"
+            className="!mt-10 text-gray-500 !text-sm md:!text-base !leading-6 md:!leading-7"
           >
             {data.description2}
           </Typography>
