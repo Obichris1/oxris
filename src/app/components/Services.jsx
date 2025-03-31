@@ -10,7 +10,7 @@ const services = [
     icon: <FaLaptopCode className="text-2xl text-primary" />,
     title: "Software Development",
     description:
-      "We build scalable,  custom websites and mobile apps tailored to your business requirements.",
+      "We build scalable,  custom websites and mobile applications tailored to your business requirements.",
     link: "/services/software-development",
   },
   {
