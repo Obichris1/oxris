@@ -50,7 +50,7 @@ export default function ContactForm() {
         setSuccess(true);
       }
     } catch (error) {
-      console.error("Error submitting form", error);
+      console.log("Error submitting form", error);
     } finally {
       setIsLoading(false);
     }
@@ -161,9 +161,9 @@ export default function ContactForm() {
           className="w-full !py-3 !bg-black text-white hover:scale-105 hover:shadow-md transition-transform font-bold text-lg rounded-md"
         >
           {isLoading ? (
-            <CircularProgress size={20} className="text-white" />
+            <CircularProgress size={20} className="!text-primary" />
           ) : (
-            <Typography className="text-sm font-semibold text-center  text-white">
+            <Typography className="!text-sm !font-semibold !text-center  !text-white">
               Submit
             </Typography>
           )}

@@ -11,7 +11,7 @@ const services = [
     title: "Software Development",
     description:
       "We build scalable,  custom websites and mobile apps tailored to your business requirements.",
-    link: "/services/web-development",
+    link: "/services/software-development",
   },
   {
     icon: <FaChalkboardTeacher className="text-2xl text-primary" />,
