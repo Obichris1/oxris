@@ -1,14 +1,8 @@
 {
     "redirects": [
       {
-        "source": "/:path*",
-        "has": [
-          {
-            "type": "host",
-            "value": "oxrissolutions.com"
-          }
-        ],
-        "destination": "https://www.oxrissolutions.com/:path*",
+        "source": "/(.*)",
+        "destination": "https://www.oxrissolutions.com/$1",
         "permanent": true
       }
     ]
