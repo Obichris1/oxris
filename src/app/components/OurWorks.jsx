@@ -5,11 +5,18 @@ import Link from 'next/link';
 import { FiPhone } from 'react-icons/fi';
 
 const projects = [
+
   {
     title: 'E-Commerce Website',
-    description: 'A self service application for Eso-E microfinance bank  ',
-    image: '/Assets/EsoE2.png',
-    url: 'https://ibank.esoebank.com/', // Replace with actual live URL
+    description: 'An ecommerce website for joe karter leather and athleisure  ',
+    image: '/Assets/joe-karter.png',
+    url: 'https://joe-karter-store-xvs1.vercel.app/', // Replace with actual live URL
+  },
+  {
+    title: 'E-Commerce Website',
+    description: 'A website for FMCC Nigeria  ',
+    image: '/Assets/fmcc.png',
+    url: 'https://fmccng.com/', // Replace with actual live URL
   },
   {
     title: 'Real Estate Platform',
@@ -17,6 +24,7 @@ const projects = [
     image: '/Assets/Dsquare2.png',
     url: 'https://dsquare-events.vercel.app/', // Replace with actual live URL
   },
+  
   {
     title: 'SaaS Dashboard',
     description: 'A fully-featured e-commerce app for shoes hive.',
