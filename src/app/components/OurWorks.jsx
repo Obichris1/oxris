@@ -107,13 +107,8 @@ const OurWorks = () => {
             >
               +234 8129614462
             </a>
-            <span className="text-gray-500">|</span>
-            <a
-              href="tel:+2349150831932"
-              className="underline hover:text-primary transition-colors duration-300"
-            >
-              +234 9150831932
-            </a>
+            {/* <span className="text-gray-500">|</span> */}
+           
           </div>
         </motion.div>
       </section>

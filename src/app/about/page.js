@@ -10,7 +10,7 @@ const page = () => {
   return (
     <div className='space-y-8 py-12'>
         <AboutUs />
-        <Team />
+        {/* <Team /> */}
         <FAQSection />
 
     
