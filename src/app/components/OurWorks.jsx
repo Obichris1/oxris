@@ -10,7 +10,7 @@ const projects = [
     title: 'E-Commerce Website',
     description: 'An ecommerce website for joe karter leather and athleisure  ',
     image: '/Assets/joe-karter.png',
-    url: 'https://joe-karter-store-xvs1.vercel.app/', // Replace with actual live URL
+    url: 'https://joe-karter-store-2d6a.vercel.app/', // Replace with actual live URL
   },
   {
     title: 'E-Commerce Website',
