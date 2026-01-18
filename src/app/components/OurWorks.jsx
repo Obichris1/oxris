@@ -10,7 +10,7 @@ const projects = [
     title: 'E-Commerce Website',
     description: 'An ecommerce website for joe karter leather and athleisure  ',
     image: '/Assets/joe-karter.png',
-    url: 'https://joe-karter-store-2d6a.vercel.app/', // Replace with actual live URL
+    url: 'https://joekarter.com/', // Replace with actual live URL
   },
   {
     title: 'E-Commerce Website',
@@ -22,21 +22,16 @@ const projects = [
     title: 'Real Estate Platform',
     description: 'An event center website for Dsquare events center ',
     image: '/Assets/Dsquare2.png',
-    url: 'https://dsquare-events.vercel.app/', // Replace with actual live URL
+    url: 'https://www.dsquarecenter.com/', // Replace with actual live URL
   },
   
   {
-    title: 'SaaS Dashboard',
-    description: 'A fully-featured e-commerce app for shoes hive.',
-    image: '/Assets/ShoesHive2.png',
-    url: 'https://shoes-hive.vercel.app/', // Replace with actual live URL
+    title: 'DS Painting Services',
+    description: 'An artisian portfolio website for a painter in Canada.',
+    image: '/Assets/ds painting.png',
+    url: 'https://www.dspaintingservices.com/', // Replace with actual live URL
   },
-  {
-    title: 'Portfolio Website',
-    description: 'A fitness application for Shred Nigeria that details a workout plan for users  .',
-    image: '/Assets/Shred.png',
-    url: 'https://shredapp.netlify.app/', // Replace with actual live URL
-  },
+
 ];
 
 const OurWorks = () => {
