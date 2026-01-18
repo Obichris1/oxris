@@ -65,7 +65,7 @@ const Navbar = () => {
       className={
         color
           ? "header header-bg bg-white text-black z-10"
-          : "header text-black bg-white "
+          : "header header-bg text-black bg-white "
       }
     >
       <div className="flex justify-between items-center w-[80%] m-auto">

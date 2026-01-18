@@ -7,13 +7,13 @@
     position: sticky;
     top:0;
     z-index: 100;
-    color: black;
+    /* color: b; */
     background-color: transparent;
 }
 
 .header-bg{
     /* background-color: rgba(8, 8, 8, 0.85); */
-    /* background-color: white; */
+    background-color: white;
     transition: 0.5s;
     
 }
